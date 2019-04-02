@@ -1,4 +1,4 @@
 package ARAprog.WriteFile;
 
-class AbstractWrite {
+abstract class AbstractWrite {
 }
