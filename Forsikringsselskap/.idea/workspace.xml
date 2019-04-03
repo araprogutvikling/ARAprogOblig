@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java" afterDir="false" />
-    </list>
+    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="714">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#528#675#0" expanded="true" />
@@ -32,33 +30,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadJOBJ.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#431#578#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/AbstractWrite.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteCSV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            <state relative-caret-position="374">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,11 +77,9 @@
         <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadJOBJ.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteJOBJ.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/AbstractWrite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/ReadCSVException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/ReadExceptions/ReadJOBJException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/WriteExceptions/WriteCSVException.java" />
@@ -97,7 +87,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/WriteExceptions/WriteException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/ReadExceptions/ReadException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/ReadExceptions/ReadCSVException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadJOBJ.java" />
       </list>
     </option>
   </component>
@@ -266,7 +258,7 @@
       <workItem from="1554213899098" duration="476000" />
       <workItem from="1554214431322" duration="78000" />
       <workItem from="1554245502568" duration="131000" />
-      <workItem from="1554245648486" duration="4255000" />
+      <workItem from="1554245648486" duration="4783000" />
     </task>
     <task id="LOCAL-00001" summary="Moved the button">
       <created>1554214365064</created>
@@ -303,11 +295,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554249612758</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gotta figure out why ReadCSVException is not working in ReadCSV.java line 16">
+      <created>1554249945373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554249945373</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Did some more stuff, not done with any file yet, so go through em all">
+      <created>1554250424107</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554250424107</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5922000" />
+    <option name="totallyTimeSpent" value="6450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -354,7 +360,9 @@
     <MESSAGE value="forgot to add &quot;abstract&quot; to AbstractWrite.java. Fixed" />
     <MESSAGE value="Added R/W Exceptions, and working on The read files, trying to figure out a good solution" />
     <MESSAGE value="Added R/W Exceptions, and working on the read files, trying to figure out a good solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added R/W Exceptions, and working on the read files, trying to figure out a good solution" />
+    <MESSAGE value="Gotta figure out why ReadCSVException is not working in ReadCSV.java line 16" />
+    <MESSAGE value="Did some more stuff, not done with any file yet, so go through em all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did some more stuff, not done with any file yet, so go through em all" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -396,13 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadJOBJ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteJOBJ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -421,18 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#528#675#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,14 +474,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="714">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#431#578#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#528#675#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/ReadJOBJ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
           </folding>
         </state>
       </provider>
