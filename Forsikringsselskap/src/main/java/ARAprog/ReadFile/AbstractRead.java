@@ -23,6 +23,9 @@ abstract class AbstractRead {
         });
         String fileType = String.valueOf(fileChooser.getSelectedExtensionFilter());
         if (fileType == "csv"){
+            ReadCSV read = new ReadCSV(selectedFile);
+        }
+        else if(fileType == "jobj"){
 
         }
     }
@@ -38,7 +41,5 @@ abstract class AbstractRead {
             //error
         }
     }
-
-    abstract void readFile(String Filetype);
 
 }
