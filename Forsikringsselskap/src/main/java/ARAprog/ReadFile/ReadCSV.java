@@ -1,5 +1,9 @@
 package ARAprog.ReadFile;
 
-public class ReadCSV extends AbstractRead {
+import java.io.File;
 
+public class ReadCSV extends AbstractRead {
+    public ReadCSV(File file){
+        readCSV(file);
+    }
 }
