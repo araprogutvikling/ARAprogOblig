@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/AbstractWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/AbstractWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/WriteFile/WriteCSV.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -383,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554756129273</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Made writeCSV work">
+      <created>1554814160743</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1554814160743</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34076000" />
+    <option name="totallyTimeSpent" value="34247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -443,7 +448,8 @@
     <MESSAGE value="The R/W files should be good to go, but they do need some filters in case of wrong info in/out" />
     <MESSAGE value="test" />
     <MESSAGE value="fixed the Read classes, and started work on the Write classes. Also created the Policies package" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the Read classes, and started work on the Write classes. Also created the Policies package" />
+    <MESSAGE value="Made writeCSV work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made writeCSV work" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
