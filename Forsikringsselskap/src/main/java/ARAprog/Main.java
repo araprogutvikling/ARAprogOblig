@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
+//TODO: Kommentér all kode
 
 public class Main extends Application {
 
