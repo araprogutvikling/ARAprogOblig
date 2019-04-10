@@ -12,7 +12,7 @@ public class Controller {
 
     public void readFile(){
         FileChooser fileChooser = new FileChooser();
-        Object read;
+        Object read; //TODO: Make sure this works
 
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
         File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
@@ -29,6 +29,7 @@ public class Controller {
            read = new ReadJOBJ(selectedFile);
         }
         else{
+            //TODO: Make a better error
             System.err.println("Wrong filetype!");
         }
     }
