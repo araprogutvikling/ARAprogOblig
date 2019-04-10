@@ -1,80 +1,91 @@
 package ARAprog.Persons;
 
-public class Person {
+import java.io.Serializable;
 
-    private int pPnr;
-    private int pAge;
-    private String pFirstName;
-    private String pLastname;
-    private String pAdress;
-    private String pAreacode;
-    private String pPostalarea;
+public abstract class Person implements Serializable{
 
-    public Person(int pPnr, int pAge, String pFirstName, String pLastname, String pAdress, String pAreacode, String pPostalarea) {
-        this.pPnr = pPnr;
-        this.pAge = pAge;
-        this.pFirstName = pFirstName;
-        this.pLastname = pLastname;
-        this.pAdress = pAdress;
-        this.pAreacode = pAreacode;
-        this.pPostalarea = pPostalarea;
+    private int prsnPnr;
+    private int prsnAge;
+    private String prsnFirstName;
+    private String prsnLastName;
+    private String prsnAdress;
+    private String prsnAreaCode;
+    private String prsnPostAlarea;
+    private String prsnEMail;
+    private String prsnTlfNr;
+
+    public Person(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
+                  String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+        this.prsnPnr = prsnPnr;
+        this.prsnAge = prsnAge;
+        this.prsnFirstName = prsnFirstName;
+        this.prsnLastName = prsnLastName;
+        this.prsnAdress = prsnAdress;
+        this.prsnAreaCode = prsnAreaCode;
+        this.prsnPostAlarea = prsnPostAlarea;
+        this.prsnEMail = prsnEMail;
+        this.prsnTlfNr = prsnTlfNr;
     }
 
-    public int getpPnr() {
-        return pPnr;
+    public int getPrsnPnr() {
+        return prsnPnr;
+    }
+    public int getPrsnAge() {
+        return prsnAge;
+    }
+    public String getPrsnFirstName() {
+        return prsnFirstName;
+    }
+    public String getPrsnLastName() {
+        return prsnLastName;
+    }
+    public String getPrsnAdress() {
+        return prsnAdress;
+    }
+    public String getPrsnAreaCode() {
+        return prsnAreaCode;
+    }
+    public String getPrsnPostAlarea() {
+        return prsnPostAlarea;
+    }
+    public String getPrsnEMail() {
+        return prsnEMail;
+    }
+    public String getPrsnTlfNr() {
+        return prsnTlfNr;
     }
 
-    public void setpPnr(int pPnr) {
-        this.pPnr = pPnr;
+
+    public void setPrsnPnr(int prsnPnr) {
+        this.prsnPnr = prsnPnr;
+    }
+    public void setPrsnAge(int prsnAge) {
+        this.prsnAge = prsnAge;
+    }
+    public void setPrsnFirstName(String prsnFirstName) {
+        this.prsnFirstName = prsnFirstName;
+    }
+    public void setPrsnLastName(String prsnLastName) {
+        this.prsnLastName = prsnLastName;
+    }
+    public void setPrsnAdress(String prsnAdress) {
+        this.prsnAdress = prsnAdress;
+    }
+    public void setPrsnAreaCode(String prsnAreaCode) {
+        this.prsnAreaCode = prsnAreaCode;
+    }
+    public void setPrsnPostAlarea(String prsnPostAlarea) {
+        this.prsnPostAlarea = prsnPostAlarea;
+    }
+    public void setPrsnEMail(String prsnEMail) {
+        this.prsnEMail = prsnEMail;
+    }
+    public void setPrsnTlfNr(String prsnTlfNr) {
+        this.prsnTlfNr = prsnTlfNr;
     }
 
-    public int getpAge() {
-        return pAge;
+    @Override
+    public String toString() {
+        return super.toString();
     }
-
-    public String getpFirstName() {
-        return pFirstName;
-    }
-
-    public String getpLastname() {
-        return pLastname;
-    }
-
-    public String getpAdress() {
-        return pAdress;
-    }
-
-    public String getpAreacode() {
-        return pAreacode;
-    }
-
-    public String getpPostalarea() {
-        return pPostalarea;
-    }
-
-    public void setpAge(int pAge) {
-        this.pAge = pAge;
-    }
-
-    public void setpFirstName(String pFirstName) {
-        this.pFirstName = pFirstName;
-    }
-
-    public void setpLastname(String pLastname) {
-        this.pLastname = pLastname;
-    }
-
-    public void setpAdress(String pAdress) {
-        this.pAdress = pAdress;
-    }
-
-    public void setpAreacode(String pAreacode) {
-        this.pAreacode = pAreacode;
-    }
-
-    public void setpPostalarea(String pPostalarea) {
-        this.pPostalarea = pPostalarea;
-    }
-
 }
-

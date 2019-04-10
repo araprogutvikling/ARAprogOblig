@@ -1,50 +1,18 @@
 package ARAprog.Persons;
 
-public class Customer extends Person implements Cloneable {
+public class Customer extends Person{
 
-    private int cCustomernr;
+    private int Customernr;
 
-    private boolean cHasPolicies;
-
-
-
-    public int getcCustomernr() {
-        return cCustomernr;
+    public Customer(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress, String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+        super(prsnPnr, prsnAge, prsnFirstName, prsnLastName, prsnAdress, prsnAreaCode, prsnPostAlarea, prsnEMail, prsnTlfNr);
     }
 
-    public void setcCustomernr(int cCustomernr) {
-        this.cCustomernr = cCustomernr;
+    public int getCustomernr() {
+        return Customernr;
     }
 
-    public boolean isChasPolicies() {
-        return cHasPolicies;
-    }
-
-    public void setChasPolicies(boolean chasPolicies) {
-        this.cHasPolicies = chasPolicies;
-    }
-
-    public boolean isCustomernr(boolean chasPolicies){
-        if (!chasPolicies){
-            return false;
-        }
-        else {
-            return true;
-        }
-
-    }
-
-    public Customer clone() {
-        if (!cHasPolicies) {
-            Customer copied = null;
-            try {
-                copied = (Customer) super.clone();
-            } catch (CloneNotSupportedException e) {
-                e.printStackTrace();
-                return null;
-            }
-            return copied;
-        }
-        return null;
+    public void setCustomernr(int customernr) {
+        Customernr = customernr;
     }
 }
