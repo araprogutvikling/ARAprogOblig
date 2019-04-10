@@ -6,57 +6,36 @@ import java.util.Scanner;
 
 abstract class AbstractRead {
 
-    protected static ArrayList<String> readCSV(File file){
+    protected static ArrayList<String> readCSVfile(File file){
         ArrayList<String> dataFromFile = new ArrayList<>();
-        Scanner fileScanner = null;
+        Scanner fileReader = null;
 
         try {
-            fileScanner = new Scanner(file.getAbsoluteFile());
+            fileReader = new Scanner(file.getAbsoluteFile());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        while(fileScanner.hasNextLine()){
-            dataFromFile.add(fileScanner.nextLine().replace(",", ";"));
+        while(fileReader.hasNextLine()){
+            dataFromFile.add(fileReader.nextLine().replace(",", ";"));
         }
 
         return dataFromFile;
     }
 
-    protected static Object readJOBJ(File file){
-        FileInputStream filInn;
-        ObjectInputStream objInn;
+    protected static Object readJOBJfile(File file){
+        FileInputStream fileIn;
+        ObjectInputStream objIn;
         Object data = null;
 
         try {
-            filInn = new FileInputStream(file.getAbsoluteFile());
-            objInn = new ObjectInputStream(filInn);
-            data = objInn.readObject();
+            fileIn = new FileInputStream(file.getAbsoluteFile());
+            objIn = new ObjectInputStream(fileIn);
+            data = objIn.readObject();
         } catch (ClassNotFoundException | IOException e) {
             e.printStackTrace();
         }
 
         return data;
     }
-
-
-    /*public void chooseFile(){
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
-        File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
-            @Override
-            public void show(Window window) {
-                super.show(window);
-            }
-        });
-        String fileType = fileChooser.getSelectedExtensionFilter().getDescription();
-        if (fileType == "Excel csv-file"){
-            ReadCSV read = new ReadCSV(selectedFile);
-        }
-        else if(fileType == "Java object"){
-           ReadJOBJ read = new ReadJOBJ(selectedFile);
-        }
-    }*/
-
-
 }
