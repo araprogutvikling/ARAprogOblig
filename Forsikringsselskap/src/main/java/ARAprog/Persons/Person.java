@@ -3,7 +3,7 @@ package ARAprog.Persons;
 import java.io.Serializable;
 
 public abstract class Person implements Serializable{
-
+//Datafelt for person
     private int prsnPnr;
     private int prsnAge;
     private String prsnFirstName;
@@ -13,7 +13,7 @@ public abstract class Person implements Serializable{
     private String prsnPostAlarea;
     private String prsnEMail;
     private String prsnTlfNr;
-
+//Konstruktør for Person
     public Person(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
                   String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
         this.prsnPnr = prsnPnr;
@@ -26,7 +26,7 @@ public abstract class Person implements Serializable{
         this.prsnEMail = prsnEMail;
         this.prsnTlfNr = prsnTlfNr;
     }
-
+//Gettere for person
     public int getPrsnPnr() {
         return prsnPnr;
     }
@@ -55,7 +55,7 @@ public abstract class Person implements Serializable{
         return prsnTlfNr;
     }
 
-
+//Settere for person
     public void setPrsnPnr(int prsnPnr) {
         this.prsnPnr = prsnPnr;
     }
@@ -83,7 +83,7 @@ public abstract class Person implements Serializable{
     public void setPrsnTlfNr(String prsnTlfNr) {
         this.prsnTlfNr = prsnTlfNr;
     }
-
+//ToString for person
     @Override
     public String toString() {
         return super.toString();
