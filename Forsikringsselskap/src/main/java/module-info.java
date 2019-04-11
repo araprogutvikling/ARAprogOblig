@@ -7,5 +7,4 @@ module Forsikringsselskap {
     requires javafx.media;
 
     exports ARAprog;
-
 }
