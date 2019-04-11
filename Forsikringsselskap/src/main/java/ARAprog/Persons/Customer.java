@@ -6,6 +6,9 @@ public class Customer extends Person implements Cloneable {
 
     private boolean cHasPolicies;
 
+    public Customer(int pPnr, int pAge, String pFirstName, String pLastname, String pAdress, String pAreacode, String pPostalarea) {
+        super(pPnr, pAge, pFirstName, pLastname, pAdress, pAreacode, pPostalarea);
+    }
 
 
     public int getcCustomernr() {
