@@ -2,9 +2,6 @@ package ARAprog;
 
 import ARAprog.ReadFile.ReadCSV;
 import ARAprog.ReadFile.ReadJOBJ;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.stage.FileChooser;
 import javafx.stage.PopupWindow;
 import javafx.stage.Window;
