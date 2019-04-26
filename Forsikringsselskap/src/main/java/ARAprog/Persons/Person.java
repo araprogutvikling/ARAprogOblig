@@ -84,9 +84,5 @@ public abstract class Person implements Serializable{
     public void setPrsnTlfNr(String prsnTlfNr) {
         this.prsnTlfNr = prsnTlfNr;
     }
-//ToString for person
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }
