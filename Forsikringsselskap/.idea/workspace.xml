@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
+    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="GUI">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_win_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Forsikringsselskap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Forsikringsselskap.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +44,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="38">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1000#1147#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1262#2420#0" expanded="true" />
+                <element signature="e#1377#2395#0" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2419#2420#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -34,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="170">
               <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,11 +93,16 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>readFile</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="CosplayGrill69" />
+        <entry key="$PROJECT_DIR$/.." value="burn2" />
       </map>
     </option>
     <favorite-branches>
@@ -97,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Policies/Polices.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Policies/Travel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/readFileExecutable.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" />
       </list>
@@ -116,19 +160,14 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Forsikringsselskap" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Forsikringsselskap" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="865" />
-    <option name="width" value="1065" />
-    <option name="height" value="1050" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -175,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,7 +254,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ARAprog" type="462c0819:PsiDirectoryNode" />
-              <item name="Persons" type="462c0819:PsiDirectoryNode" />
+              <item name="ReadFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
@@ -237,6 +275,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,6 +364,7 @@
       <workItem from="1556011010786" duration="3289000" />
       <workItem from="1556123963616" duration="1469000" />
       <workItem from="1556266513696" duration="2302000" />
+      <workItem from="1556284917735" duration="573000" />
     </task>
     <task id="LOCAL-00001" summary="Person klassen(ikke ferdig)">
       <created>1554721600815</created>
@@ -396,11 +436,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556278513850</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="merge">
+      <created>1556279756655</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556279756655</updated>
+    </task>
+    <task id="LOCAL-00012" summary="GUI">
+      <created>1556281478502</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556281478502</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25156000" />
+    <option name="totallyTimeSpent" value="30233000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,8 +467,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -423,7 +478,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32502708" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32502708" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,7 +487,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.32577905" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.32502708" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -440,7 +495,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32942432" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -484,7 +539,8 @@
     <MESSAGE value="Person klassen(kinda ferdig)" />
     <MESSAGE value="Person klassen(kinda ferdig)&#10;Polices (ikke ferdig)" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/WriteExceptions/InvalidPersonExceptionTest.java" />
@@ -530,17 +586,6 @@
           <folding>
             <element signature="e#1532#1533#0" expanded="true" />
             <element signature="e#1567#1568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Claims.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setDescriptionOfIncident#0;class#Claims#0" />
           </folding>
         </state>
       </provider>
@@ -593,17 +638,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Polices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Claims.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setDescriptionOfIncident#0;class#Claims#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/readFileExecutable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="170">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -612,17 +669,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="115" selection-start-line="15" selection-start-column="115" selection-end-line="15" selection-end-column="115" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="38">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1000#1147#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1262#2420#0" expanded="true" />
+            <element signature="e#1377#2395#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
