@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/Loading.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_win_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forsikringsselskap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Forsikringsselskap.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Persons/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Persons/Customer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Persons/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Persons/Person.class" afterDir="false" />
@@ -76,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -356,7 +333,7 @@
       <workItem from="1556309060553" duration="2208000" />
       <workItem from="1556311320062" duration="1875000" />
       <workItem from="1556313221859" duration="1338000" />
-      <workItem from="1556315088871" duration="291000" />
+      <workItem from="1556315088871" duration="542000" />
     </task>
     <task id="LOCAL-00001" summary="Lagde knapp">
       <created>1554723272240</created>
@@ -386,11 +363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554901965148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fikset Ny Kunde og loadinggif!">
+      <created>1556315587979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556315587979</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33164000" />
+    <option name="totallyTimeSpent" value="33415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -405,7 +389,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,7 +450,8 @@
     <MESSAGE value="Opprettet GUI for program" />
     <MESSAGE value="Lagt til knapper" />
     <MESSAGE value="All buttons have IDs, started on labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="All buttons have IDs, started on labels" />
+    <MESSAGE value="Fikset Ny Kunde og loadinggif!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fikset Ny Kunde og loadinggif!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/InvalidePolicieExcption/InvalidePolicieException.java">
@@ -586,8 +571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
