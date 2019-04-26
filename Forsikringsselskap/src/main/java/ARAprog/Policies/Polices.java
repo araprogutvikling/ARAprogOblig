@@ -1,8 +1,9 @@
 package ARAprog.Policies;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Polices {
+public class Polices implements Serializable {
     private int plcsPremium;
     private int plcsPayOut;
     private String plcsTerms;
@@ -40,10 +41,5 @@ public class Polices {
     }
     public void setPlcsInitialisedDate() {
         this.plcsInitialisedDate = LocalDate.now();
-    }
-
-    @Override
-    public String toString() {
-        return (plcsInitialisedDate + plcsTerms + plcsPayOut + plcsPremium); //TODO: legg inn noen " " og sånt!
     }
 }
