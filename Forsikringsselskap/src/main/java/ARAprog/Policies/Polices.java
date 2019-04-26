@@ -7,6 +7,7 @@ public class Polices implements Serializable {
     private int plcsPremium;
     private int plcsPayOut;
     private String plcsTerms;
+    //Javaklasse som tar maskinens
     private LocalDate plcsInitialisedDate;
 
     public Polices(int plcsPremium, int plcsPayOut, String plcsTerms) {
