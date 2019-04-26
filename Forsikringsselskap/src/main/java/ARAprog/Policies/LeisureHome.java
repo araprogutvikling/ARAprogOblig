@@ -9,13 +9,13 @@ public class LeisureHome extends Polices {
     private String leisureBuildYear;
     private String leisureType;
     private String leisureMaterial;
-    private String standar; //TODO: finne ut hva som menes med "Standar". Spør Annette!
+    private String leisureStandards;
     private String LeisureSquareM;
     private double leisureInsuredFor;
     private double leisureContentInsuredFor;
 
     public LeisureHome(int plcsPremium, int plcsPayOut, String plcsTerms, Person leisureOwner, String leisureAdress,
-                       String leisureBuildYear, String leisureType, String leisureMaterial, String standar, String leisureSquareM,
+                       String leisureBuildYear, String leisureType, String leisureMaterial, String leisureStandards, String leisureSquareM,
                        double leisureInsuredFor, double leisureContentInsuredFor) {
 
         super(plcsPremium, plcsPayOut, plcsTerms);
@@ -25,7 +25,7 @@ public class LeisureHome extends Polices {
         this.leisureBuildYear = leisureBuildYear;
         this.leisureType = leisureType;
         this.leisureMaterial = leisureMaterial;
-        this.standar = standar;
+        this.leisureStandards = leisureStandards;
         this.LeisureSquareM = leisureSquareM;
         this.leisureInsuredFor = leisureInsuredFor;
         this.leisureContentInsuredFor = leisureContentInsuredFor;
@@ -47,8 +47,8 @@ public class LeisureHome extends Polices {
     public String getLeisureMaterial() {
         return leisureMaterial;
     }
-    public String getStandar() {
-        return standar;
+    public String getLeisureStandards() {
+        return leisureStandards;
     }
     public String getLeisureSquareM() {
         return LeisureSquareM;
@@ -76,8 +76,8 @@ public class LeisureHome extends Polices {
     public void setLeisureMaterial(String leisureMaterial) {
         this.leisureMaterial = leisureMaterial;
     }
-    public void setStandar(String standar) {
-        this.standar = standar;
+    public void setLeisureStandards(String leisureStandards) {
+        this.leisureStandards = leisureStandards;
     }
     public void setLeisureSquareM(String leisureSquareM) {
         LeisureSquareM = leisureSquareM;
