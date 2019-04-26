@@ -23,12 +23,11 @@ public class Controller {
     Service<Void> dataLoaderThread;
 
     public void readFile() {
-
-
         //TODO: Make sure this works
         FileChooser fileChooser = new FileChooser();
         ArrayList<String> data = new ArrayList<>();
         ScrollList.getItems().clear();
+        btnReadFile.setDisable(true);
 
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
         File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
@@ -55,11 +54,14 @@ public class Controller {
                                 Text string = new Text(text + "\n");
                                 ScrollList.getItems().add(string);
                             }
+
                         } else if (fileType == "Java object") {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
+
                         } else {
                             //TODO: Make a better error
                             System.err.println("Wrong filetype!");
+
                         }
 
                         return null;
@@ -67,7 +69,7 @@ public class Controller {
                 };
             }
         };
-        dataLoaderThread.setOnSucceeded(event -> System.out.println("Done loading!"));
+        dataLoaderThread.setOnSucceeded(event -> btnReadFile.setDisable(false));
         dataLoaderThread.restart();
     }
 
