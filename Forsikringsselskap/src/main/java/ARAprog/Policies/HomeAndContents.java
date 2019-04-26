@@ -9,7 +9,7 @@ public class HomeAndContents extends Polices {
     private String homeBuildYear;
     private String homeType;
     private String homeMaterial;
-    private String homeStandards; //TODO: finne ut hva som menes med "Standar". Spør Annette!
+    private String homeStandards;
     private String homeSquareM;
     private double homeInsuredFor;
     private double ContentInsuredFor;

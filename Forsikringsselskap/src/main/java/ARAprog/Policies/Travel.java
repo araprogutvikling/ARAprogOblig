@@ -26,4 +26,5 @@ public class Travel extends Polices {
     public void setTravelInsuredFor(String travelInsuredFor) {
         this.travelInsuredFor = travelInsuredFor;
     }
+
 }
