@@ -16,6 +16,7 @@ public abstract class Person implements Serializable{
 //Konstruktør for Person
     public Person(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
                   String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+
         this.prsnPnr = prsnPnr;
         this.prsnAge = prsnAge;
         this.prsnFirstName = prsnFirstName;

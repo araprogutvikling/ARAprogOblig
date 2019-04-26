@@ -6,6 +6,7 @@ module Forsikringsselskap {
     requires javafx.graphics;
     requires javafx.media;
 
+
     exports ARAprog;
     opens ARAprog;
 }

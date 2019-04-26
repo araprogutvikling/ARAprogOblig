@@ -4,7 +4,9 @@ public class Customer extends Person{
 //Datafelt for Customer
     private int Customernr;
 //Konstruktør for Customer
-    public Customer(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress, String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+    public Customer(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
+                    String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+
         super(prsnPnr, prsnAge, prsnFirstName, prsnLastName, prsnAdress, prsnAreaCode, prsnPostAlarea, prsnEMail, prsnTlfNr);
     }
 //Getter for Customer
