@@ -1,53 +1,23 @@
 package ARAprog.Persons;
 
-public class Customer extends Person implements Cloneable {
-
-    private int cCustomernr;
-
-    private boolean cHasPolicies;
-
-    public Customer(int pPnr, int pAge, String pFirstName, String pLastname, String pAdress, String pAreacode, String pPostalarea) {
-        super(pPnr, pAge, pFirstName, pLastname, pAdress, pAreacode, pPostalarea);
+public class Customer extends Person{
+//Datafelt for Customer
+    private int Customernr;
+//Konstruktør for Customer
+    public Customer(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress, String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+        super(prsnPnr, prsnAge, prsnFirstName, prsnLastName, prsnAdress, prsnAreaCode, prsnPostAlarea, prsnEMail, prsnTlfNr);
     }
-
-
-    public int getcCustomernr() {
-        return cCustomernr;
+//Getter for Customer
+    public int getCustomernr() {
+        return Customernr;
     }
-
-    public void setcCustomernr(int cCustomernr) {
-        this.cCustomernr = cCustomernr;
+//Setter for Customer
+    public void setCustomernr(int customernr) {
+        Customernr = customernr;
     }
-
-    public boolean isChasPolicies() {
-        return cHasPolicies;
-    }
-
-    public void setChasPolicies(boolean chasPolicies) {
-        this.cHasPolicies = chasPolicies;
-    }
-
-    public boolean isCustomernr(boolean chasPolicies){
-        if (!chasPolicies){
-            return false;
-        }
-        else {
-            return true;
-        }
-
-    }
-
-    public Customer clone() {
-        if (!cHasPolicies) {
-            Customer copied = null;
-            try {
-                copied = (Customer) super.clone();
-            } catch (CloneNotSupportedException e) {
-                e.printStackTrace();
-                return null;
-            }
-            return copied;
-        }
-        return null;
+//ToString for Customer
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

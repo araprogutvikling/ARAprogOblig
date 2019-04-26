@@ -2,8 +2,7 @@ package ARAprog.Persons;
 
 public class PreviousCustomer extends Customer {
 
-
-    public PreviousCustomer(int pPnr, int pAge, String pFirstName, String pLastname, String pAdress, String pAreacode, String pPostalarea) {
-        super(pPnr, pAge, pFirstName, pLastname, pAdress, pAreacode, pPostalarea);
+    public PreviousCustomer(int prsnPnr, int prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress, String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
+        super(prsnPnr, prsnAge, prsnFirstName, prsnLastName, prsnAdress, prsnAreaCode, prsnPostAlarea, prsnEMail, prsnTlfNr);
     }
 }
