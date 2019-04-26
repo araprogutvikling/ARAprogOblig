@@ -9,13 +9,13 @@ public class HomeAndContents extends Polices {
     private String homeBuildYear;
     private String homeType;
     private String homeMaterial;
-    private String standar; //TODO: finne ut hva som menes med "Standar". Spør Annette!
+    private String homeStandards; //TODO: finne ut hva som menes med "Standar". Spør Annette!
     private String homeSquareM;
     private double homeInsuredFor;
     private double ContentInsuredFor;
 
     public HomeAndContents(int plcsPremium, int plcsPayOut, String plcsTerms, Person homeOwner, String homeAdress,
-                           String homeBuildYear, String homeType, String homeMaterial, String standar, String homeSquareM,
+                           String homeBuildYear, String homeType, String homeMaterial, String homeStandards, String homeSquareM,
                            double homeInsuredFor, double contentInsuredFor) {
 
         super(plcsPremium, plcsPayOut, plcsTerms);
@@ -25,7 +25,7 @@ public class HomeAndContents extends Polices {
         this.homeBuildYear = homeBuildYear;
         this.homeType = homeType;
         this.homeMaterial = homeMaterial;
-        this.standar = standar;
+        this.homeStandards = homeStandards;
         this.homeSquareM = homeSquareM;
         this.homeInsuredFor = homeInsuredFor;
         this.ContentInsuredFor = contentInsuredFor;
@@ -47,8 +47,8 @@ public class HomeAndContents extends Polices {
     public String getHomeMaterial() {
         return homeMaterial;
     }
-    public String getStandar() {
-        return standar;
+    public String gethomeStandards() {
+        return homeStandards;
     }
     public String getHomeSquareM() {
         return homeSquareM;
@@ -76,8 +76,8 @@ public class HomeAndContents extends Polices {
     public void setHomeMaterial(String homeMaterial) {
         this.homeMaterial = homeMaterial;
     }
-    public void setStandar(String standar) {
-        this.standar = standar;
+    public void sethomeStandards(String homeStandards) {
+        this.homeStandards = homeStandards;
     }
     public void setHomeSquareM(String homeSquareM) {
         this.homeSquareM = homeSquareM;
