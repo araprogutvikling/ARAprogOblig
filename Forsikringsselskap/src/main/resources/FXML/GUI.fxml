@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
+<AnchorPane prefHeight="600.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
    <children>
       <AnchorPane fx:id="AnchorPaneCustomer" layoutX="14.0" layoutY="12.0" prefHeight="523.0" prefWidth="308.0">
          <children>
-            <Button fx:id="btnReadFile" layoutX="192.0" layoutY="472.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="94.0" text="Hent fil" onAction="#readFile">
+            <Button fx:id="btnReadFile" layoutX="192.0" layoutY="472.0" mnemonicParsing="false" onAction="#readFile" prefHeight="36.0" prefWidth="94.0" text="Hent fil">
                <font>
                   <Font size="16.0" />
                </font>
@@ -93,6 +93,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
+                        <Button fx:id="btnNyku" layoutX="204.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNykunde" text="Ny kunde" />
                      </children></AnchorPane>
             </content>
           </Tab>
