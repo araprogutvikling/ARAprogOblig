@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Persons/PreviousCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,12 +24,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            <state relative-caret-position="314">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3281#3428#0" expanded="true" />
-                <element signature="e#3427#3428#0" expanded="true" />
+                <element signature="e#1628#1775#0" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="95" column="132" selection-start-line="95" selection-start-column="115" selection-end-line="95" selection-end-column="132" />
+              <caret line="95" column="145" selection-start-line="95" selection-start-column="145" selection-end-line="95" selection-end-column="145" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
@@ -306,17 +306,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556315587979</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merga mer av arbeidet">
+      <created>1556374251549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556374251549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33934000" />
+    <option name="totallyTimeSpent" value="34269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -325,7 +332,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32719395" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,7 +394,8 @@
     <MESSAGE value="Lagt til knapper" />
     <MESSAGE value="All buttons have IDs, started on labels" />
     <MESSAGE value="Fikset Ny Kunde og loadinggif!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fikset Ny Kunde og loadinggif!" />
+    <MESSAGE value="Merga mer av arbeidet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merga mer av arbeidet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/InvalidePolicieExcption/InvalidePolicieException.java">
@@ -499,12 +507,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="314">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3281#3428#0" expanded="true" />
-            <element signature="e#3427#3428#0" expanded="true" />
+            <element signature="e#1628#1775#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -512,7 +520,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="95" column="132" selection-start-line="95" selection-start-column="115" selection-end-line="95" selection-end-column="132" />
+          <caret line="95" column="145" selection-start-line="95" selection-start-column="145" selection-end-line="95" selection-end-column="145" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
