@@ -36,18 +36,17 @@ public class Controller{
     }
 
     public void LagNyKundeOnClick(ActionEvent actionEvent){
-
         try{
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();
             this.loadingScene = FXMLLoader.load(getClass().getResource("/FXML/Loading.fxml"));
             Scene scene = new Scene(loadingScene);
             loadingStage.setScene(scene);
-            /*Customer newCustomer;
+            Customer newCustomer;
             newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
                     inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
                     inputPhone.getText(), inputEmail.getText());
-            loadingStage.close();*/
+            loadingStage.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
