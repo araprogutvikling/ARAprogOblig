@@ -36,20 +36,38 @@ public class Controller{
     }
 
     public void LagNyKundeOnClick(ActionEvent actionEvent){
+        int customerPNr = 0;
+        String customerDateBirth;
+        String customerFirstName;
+        String CustomerLastName;
+        String CustomerAdress;
+        String CustomerZipcode;
+        String CustomerArea;
+        String CustomerPhone;
+        String CustomerEmail;
+
         try{
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();
             this.loadingScene = FXMLLoader.load(getClass().getResource("/FXML/Loading.fxml"));
             Scene scene = new Scene(loadingScene);
             loadingStage.setScene(scene);
-            Customer newCustomer;
-            newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
-                    inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
-                    inputPhone.getText(), inputEmail.getText());
             loadingStage.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        InputPnr.lengthProperty() = 11;
+        try {
+            customerPNr = Integer.parseInt(InputPnr.getText());
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+
+
+       /* Customer newCustomer;
+        newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
+                inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
+                inputPhone.getText(), inputEmail.getText());*/
     }
 
     public void btnNykunde(ActionEvent actionEvent) {
