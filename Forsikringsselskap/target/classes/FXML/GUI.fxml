@@ -13,7 +13,7 @@
    <children>
       <AnchorPane fx:id="AnchorPaneCustomer" layoutX="14.0" layoutY="12.0" prefHeight="523.0" prefWidth="308.0">
          <children>
-            <Button fx:id="btnReadFile" layoutX="192.0" layoutY="472.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="94.0" text="Hent fil">
+            <Button fx:id="btnReadFile" layoutX="192.0" layoutY="472.0" mnemonicParsing="false" onAction="#readFile" prefHeight="36.0" prefWidth="94.0" text="Hent fil">
                <font>
                   <Font size="16.0" />
                </font>
@@ -341,6 +341,67 @@
                         <Button fx:id="btnNewT" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
                         <Button fx:id="btnChangeT" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
                         <Button fx:id="btnDelT" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Label fx:id="lblTInsuranceNr" layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTInsurancePrm" layoutX="18.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTDateForInsurance" layoutX="18.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTAmountInsurance" layoutX="18.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnTInsuranceConditions1" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Label fx:id="lblTAreaInsurance" layoutX="18.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsområde:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAreaInsurance1" layoutX="270.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsområde her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTSumInsurance" layoutX="18.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringssum">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTSumInsurance" layoutX="270.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringssum her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -351,6 +412,117 @@
                         <Button fx:id="btnNewC" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
                         <Button fx:id="btnChangeC" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
                         <Button fx:id="btnDelC" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Label fx:id="lblCInsuranceNr" layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsurancePrm" layoutX="18.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCAddress" layoutX="18.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="Boligens adresse:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCType" layoutX="18.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="Boligtype:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCBuildingMaterial" layoutX="18.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="Byggemateriale:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCStandard" layoutX="18.0" layoutY="278.0" prefHeight="46.0" prefWidth="201.0" text="Standard:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCSquaremeter" layoutX="18.0" layoutY="300.0" prefHeight="46.0" prefWidth="201.0" text="Antall kvadratmeter:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsuranceVB" layoutX="18.0" layoutY="323.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp for bygning:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsuranceVC" layoutX="18.0" layoutY="346.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp innbo:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCAddress1" layoutX="270.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="Adresse her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCType1" layoutX="270.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="Boligtype her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCBuildingMaterial1" layoutX="270.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="Byggemateriale her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCStandard1" layoutX="270.0" layoutY="277.0" prefHeight="46.0" prefWidth="201.0" text="Standard her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCSquaremeter1" layoutX="270.0" layoutY="300.0" prefHeight="46.0" prefWidth="201.0" text="Antall kvadramt her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsuranceVB1" layoutX="270.0" layoutY="323.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp fro B her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCInsuranceVC1" layoutX="270.0" layoutY="346.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp for I her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCDateForInsurance" layoutX="18.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Dato for opprettet forsikring her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCAmountInsurance" layoutX="18.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnCInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -360,6 +532,8 @@
                      <children>
                         <Button fx:id="btnChangeHis" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
                         <Button fx:id="btnDelHis" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button layoutX="155.0" layoutY="450.0" mnemonicParsing="false" text="Ny skademelding" />
+                        <ListView fx:id="ListForClaimsHistory" layoutX="25.0" layoutY="17.0" prefHeight="406.0" prefWidth="759.0" />
                      </children></AnchorPane>
                </content>
             </Tab>
