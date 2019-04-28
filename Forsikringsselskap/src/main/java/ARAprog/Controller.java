@@ -94,7 +94,11 @@ public class Controller{
             }
         };
         //TODO: Make a better solution for the line below, and also add parsing of the data and sorting
-        dataLoaderThread.setOnSucceeded(event -> {for(String text : data){Text string = new Text(text + "\n");ScrollList.getItems().add(string);}});
+        dataLoaderThread.setOnSucceeded(event -> {
+            for(String text : data){
+                Text string = new Text(text + "\n");
+                ScrollList.getItems().add(string);}
+        });
 
         dataLoaderThread.start();
     }
