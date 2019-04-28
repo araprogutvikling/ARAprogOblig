@@ -11,6 +11,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 
 public class Controller{
     Service<Void> dataLoaderThread;
+    ArrayList<String> data = new ArrayList<>();
 
     @FXML
     public Button btnNyKundeLukk;
@@ -37,6 +39,7 @@ public class Controller{
     public TextField inputEmail;
     public Button btnReadFile;
     public ListView ScrollList;
+    public Label lblOCustomer;
 
     public Parent nyKundeScene, loadingScene;
 
@@ -45,11 +48,13 @@ public class Controller{
     }
 
     public void readFile() {
-        //TODO: Make sure this works
         FileChooser fileChooser = new FileChooser();
-        ArrayList<String> data = new ArrayList<>();
         ScrollList.getItems().clear();
+        data.clear();
+        /*
+        TODO: Make the disable thing work
         btnReadFile.setDisable(true);
+        */
 
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
         File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
@@ -60,6 +65,7 @@ public class Controller{
         });
         String fileType = fileChooser.getSelectedExtensionFilter().getDescription();
         dataLoaderThread = new Service<Void>() {
+
             @Override
             protected Task<Void> createTask() {
                 return new Task<Void>() {
@@ -72,10 +78,6 @@ public class Controller{
                             ReadCSV read = new ReadCSV(selectedFile);
                             data.addAll(read.getFileData());
                             System.out.println(data);
-                            for (String text : data) {
-                                Text string = new Text(text + "\n");
-                                ScrollList.getItems().add(string);
-                            }
 
                         } else if (fileType == "Java object") {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
@@ -91,8 +93,17 @@ public class Controller{
                 };
             }
         };
-        dataLoaderThread.setOnSucceeded(event -> btnReadFile.setDisable(false));
-        dataLoaderThread.restart();
+        //TODO: Make a better solution for the line below, and also add parsing of the data and sorting
+        dataLoaderThread.setOnSucceeded(event -> {for(String text : data){Text string = new Text(text + "\n");ScrollList.getItems().add(string);}});
+
+        dataLoaderThread.start();
+    }
+
+    public void getSelectedCustomer() throws IllegalStateException{
+        int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
+        lblOCustomer.setText(data.get(selectedCustomer));
+
+        System.out.println(selectedCustomer);
     }
 
     public void btnNykunde(ActionEvent actionEvent) {
