@@ -93,6 +93,8 @@ public class Controller{
                 };
             }
         };
+        //TODO: Make sure all the textfields and labels are used
+        //TODO: Make a test csv file and test jobj file, with all data
         //TODO: Make a better solution for the line below, and also add parsing of the data and sorting
         dataLoaderThread.setOnSucceeded(event -> {
             for(String text : data){
