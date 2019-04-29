@@ -62,17 +62,17 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="262.0" prefHeight="46.0" prefWidth="162.0" text="Fritidsboligforsikring:">
+                        <Label layoutX="17.0" layoutY="330.0" prefHeight="46.0" prefWidth="162.0" text="Fritidsboligforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="295.0" prefHeight="46.0" prefWidth="162.0" text="Båtforsikring:">
+                        <Label layoutX="17.0" layoutY="262.0" prefHeight="46.0" prefWidth="162.0" text="Båtforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="330.0" prefHeight="46.0" prefWidth="162.0" text="Reiseforsikring:">
+                        <Label layoutX="17.0" layoutY="295.0" prefHeight="46.0" prefWidth="162.0" text="Reiseforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>

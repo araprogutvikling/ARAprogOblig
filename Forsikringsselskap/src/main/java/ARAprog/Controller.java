@@ -176,9 +176,9 @@ public class Controller{
         lblOAddress.setText("Faktureringsadresse: " + selectedCustomerData[4] + ", " + selectedCustomerData[5] + " " + selectedCustomerData[6]);
         lblOCustomerStart.setText("Kundeforhold opprettet: " + selectedCustomerData[7]);
         lblOYN1.setText(selectedCustomerData[8]);
-        lblOYN2.setText(selectedCustomerData[11]);
-        lblOYN3.setText(selectedCustomerData[9]);
-        lblOYN4.setText(selectedCustomerData[10]);
+        lblOYN2.setText(selectedCustomerData[9]);
+        lblOYN3.setText(selectedCustomerData[10]);
+        lblOYN4.setText(selectedCustomerData[11]);
     }
 
     private String[] parseCustomerData(String data){
