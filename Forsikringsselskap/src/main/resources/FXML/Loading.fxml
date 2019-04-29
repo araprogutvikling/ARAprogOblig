@@ -8,7 +8,7 @@
    <children>
       <ImageView fitHeight="265.0" fitWidth="395.0" layoutX="168.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../ASSets/load.gif" />
+            <Image url="@../Assets/load.gif" />
          </image></ImageView>
    </children>
 </AnchorPane>

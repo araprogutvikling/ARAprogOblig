@@ -38,19 +38,27 @@ public class Controller{
     public TextField inputPhone;
     public TextField inputEmail;
     public Button btnReadFile;
+    public ListView ListForClaimsHistory;
     public ListView ScrollList;
-    public Label lblOCustomer;
+    public Label lblOCustomer, lblOAddress, lblOCustomerStart, lblOYN1, lblOYN2, lblOYN3, lblOYN4, lblHInsuranceNr1,
+            lblHInsurancePrm1, lblHAddress1, lblHType1, lblHBuildingMaterial1, lblHStandard1, lblHSquaremeter1,
+            lblHInsuranceVB1, lblHDateForInsurance1, lblHAmountInsurance1, lblHInsuranceVC11, lblBInsuranceNr1, lblBInsurancePrm1,
+            lblBOwner1, lblHType11, lblBTypeModel1, lblBRegNr1, lblBYear1, lblBMotor1, lblBAmountInsurance1,
+            lblBDateForInsurance2, lblTInsuranceNr1, lblTInsurancePrm1, lblTDateForInsurance1, lblTAmountInsurance1, lblTSumInsurance1,
+            lblAreaInsurance1, lblCInsuranceNr1, lblCInsurancePrm1, lblCAddress1, lblCType1, lblCBuildingMaterial1, lblHInsuranceVC1,
+            lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
     public Parent nyKundeScene, loadingScene;
 
     @FXML public void initialize(){
-
+        clearTextFields();
     }
 
     public void readFile() {
         FileChooser fileChooser = new FileChooser();
         ScrollList.getItems().clear();
         data.clear();
+
         /*
         TODO: Make the disable thing work
         btnReadFile.setDisable(true);
@@ -72,12 +80,11 @@ public class Controller{
                     @Override
                     protected Void call() throws Exception {
 
-                        Thread.sleep(5000);
+                        Thread.sleep(2000);
 
                         if (fileType == "Excel csv-file") {
                             ReadCSV read = new ReadCSV(selectedFile);
                             data.addAll(read.getFileData());
-                            System.out.println(data);
 
                         } else if (fileType == "Java object") {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
@@ -98,18 +105,68 @@ public class Controller{
         //TODO: Make a better solution for the line below, and also add parsing of the data and sorting
         dataLoaderThread.setOnSucceeded(event -> {
             for(String text : data){
-                Text string = new Text(text + "\n");
-                ScrollList.getItems().add(string);}
+                String[] string = parseCustomerData(text);
+                ScrollList.getItems().add("Kundenr: " + string[0] + " " + string[1] + " " + string[2]);
+            }
         });
 
         dataLoaderThread.start();
     }
 
-    public void getSelectedCustomer() throws IllegalStateException{
-        int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
-        lblOCustomer.setText(data.get(selectedCustomer));
+    protected void clearTextFields(){
+        lblOCustomer.setText("----------");
+        lblOAddress.setText("----------");
+        lblOCustomerStart.setText("----------");
+        lblHInsuranceNr1.setText("----------");
+        lblHInsurancePrm1.setText("----------");
+        lblHAddress1.setText("----------");
+        lblHType1.setText("----------");
+        lblHBuildingMaterial1.setText("----------");
+        lblHStandard1.setText("----------");
+        lblHSquaremeter1.setText("----------");
+        lblHInsuranceVB1.setText("----------");
+        lblHDateForInsurance1.setText("----------");
+        lblHAmountInsurance1.setText("----------");
+        lblHInsuranceVC11.setText("----------");
+        lblBInsuranceNr1.setText("----------");
+        lblBInsurancePrm1.setText("----------");
+        lblBOwner1.setText("----------");
+        lblHType11.setText("----------");
+        lblBTypeModel1.setText("----------");
+        lblBRegNr1.setText("----------");
+        lblBYear1.setText("----------");
+        lblBMotor1.setText("----------");
+        lblBAmountInsurance1.setText("----------");
+        lblBDateForInsurance2.setText("----------");
+        lblTInsuranceNr1.setText("----------");
+        lblTInsurancePrm1.setText("----------");
+        lblTDateForInsurance1.setText("----------");
+        lblTAmountInsurance1.setText("----------");
+        lblAreaInsurance1.setText("----------");
+        lblCInsuranceNr1.setText("----------");
+        lblCInsurancePrm1.setText("----------");
+        lblCAddress1.setText("----------");
+        lblCType1.setText("----------");
+        lblCBuildingMaterial1.setText("----------");
+        lblCStandard1.setText("----------");
+        lblCSquaremeter1.setText("----------");
+        lblCInsuranceVB1.setText("----------");
+        lblCInsuranceVC1.setText("----------");
+        lblCDateForInsurance1.setText("----------");
+        lblCAmountInsurance1.setText("----------");
+        lblHInsuranceVC1.setText("----------");
+        lblTSumInsurance1.setText("----------");
+    }
 
-        System.out.println(selectedCustomer);
+    public void getSelectedCustomer(){
+        int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
+        String[] selectedCustomerData = parseCustomerData(data.get(selectedCustomer));
+        lblOCustomer.setText("Kundenr: " + selectedCustomerData[0] + " | Navn: " + selectedCustomerData[1] + " " + selectedCustomerData[2] + " | Personnr: " + selectedCustomerData[3]);
+    }
+
+    public String[] parseCustomerData(String data){
+        String[] customerDataList = data.split(";");
+        return customerDataList;
     }
 
     public void btnNykunde(ActionEvent actionEvent) {
