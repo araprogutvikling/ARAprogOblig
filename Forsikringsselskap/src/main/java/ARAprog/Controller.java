@@ -54,10 +54,12 @@ public class Controller{
         clearTextFields();
     }
 
-    public void readFile() {
+    public void readFile(){
         FileChooser fileChooser = new FileChooser();
         ScrollList.getItems().clear();
         data.clear();
+        clearTextFields();
+        String fileType = null;
 
         /*
         TODO: Make the disable thing work
@@ -71,7 +73,13 @@ public class Controller{
                 super.show(window);
             }
         });
-        String fileType = fileChooser.getSelectedExtensionFilter().getDescription();
+
+        try {
+            fileType = fileChooser.getSelectedExtensionFilter().getDescription();
+        } catch (Exception e) {
+            e.getCause();
+        }
+        String finalFileType = fileType;
         dataLoaderThread = new Service<Void>() {
 
             @Override
@@ -82,11 +90,11 @@ public class Controller{
 
                         Thread.sleep(2000);
 
-                        if (fileType == "Excel csv-file") {
+                        if (finalFileType == "Excel csv-file") {
                             ReadCSV read = new ReadCSV(selectedFile);
                             data.addAll(read.getFileData());
 
-                        } else if (fileType == "Java object") {
+                        } else if (finalFileType == "Java object") {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
 
                         } else {
@@ -113,7 +121,9 @@ public class Controller{
         dataLoaderThread.start();
     }
 
-    protected void clearTextFields(){
+    //TODO: Sort methods into corresponding classes
+
+    private void clearTextFields(){
         lblOCustomer.setText("----------");
         lblOAddress.setText("----------");
         lblOCustomerStart.setText("----------");
@@ -161,11 +171,19 @@ public class Controller{
     public void getSelectedCustomer(){
         int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
         String[] selectedCustomerData = parseCustomerData(data.get(selectedCustomer));
+
         lblOCustomer.setText("Kundenr: " + selectedCustomerData[0] + " | Navn: " + selectedCustomerData[1] + " " + selectedCustomerData[2] + " | Personnr: " + selectedCustomerData[3]);
+        lblOAddress.setText("Faktureringsadresse: " + selectedCustomerData[4] + ", " + selectedCustomerData[5] + " " + selectedCustomerData[6]);
+        lblOCustomerStart.setText("Kundeforhold opprettet: " + selectedCustomerData[7]);
+        lblOYN1.setText(selectedCustomerData[8]);
+        lblOYN2.setText(selectedCustomerData[11]);
+        lblOYN3.setText(selectedCustomerData[9]);
+        lblOYN4.setText(selectedCustomerData[10]);
     }
 
-    public String[] parseCustomerData(String data){
+    private String[] parseCustomerData(String data){
         String[] customerDataList = data.split(";");
+        //TODO: Add exception checks with error messages
         return customerDataList;
     }
 
