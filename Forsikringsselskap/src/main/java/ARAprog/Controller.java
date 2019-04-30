@@ -53,7 +53,7 @@ public class Controller{
     public Parent nyKundeScene, loadingScene;
 
     @FXML public void initialize(){
-        clearTextFields();
+        //clearTextFields();
     }
 
     public void readFile(){
@@ -125,12 +125,10 @@ public class Controller{
     }
 
     //TODO: Sort methods into corresponding classes
-    private void getSelectedCustomer(){
+    public void getSelectedCustomer(){
         SetSelectedCustomer selectedCustomer = new SetSelectedCustomer();
         selectedCustomer.setSelectedCustomer(ScrollList.getSelectionModel().getSelectedIndex(), data);
     }
-
-
 
     public void btnNykunde(ActionEvent actionEvent) {
         Node node = (Node) actionEvent.getSource();
@@ -139,14 +137,47 @@ public class Controller{
             this.nyKundeScene = FXMLLoader.load(getClass().getResource("/FXML/NyKunde.fxml"));
 
         } catch (IOException e) {
-            System.out.println(e.getCause());
+            e.printStackTrace();
         }
-        Scene scene = new Scene(this.nyKundeScene);
-        Stage modal= new Stage();
-        modal.setScene(scene);
-        modal.initOwner(primaryStage);
+        Scene scene = new Scene(nyKundeScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void modalBack(Stage stage, Scene newScene){
+
+        Stage modal = new Stage();
+        modal.setScene(newScene);
+        modal.initOwner(stage);
         modal.initModality(Modality.APPLICATION_MODAL);
         modal.showAndWait();
+    }
+
+
+
+    public int customerNewPnr() throws Exception {
+        int pNr;
+        String customerPnrtemp = InputPnr.getText();
+        if (customerPnrtemp.length() < 10){
+            throw new Exception();
+        }
+        if (customerPnrtemp.length() > 10){
+            throw new Exception();
+        }
+        if (!isANumber(customerPnrtemp)) {
+            throw new Exception();
+        }
+        try {
+            pNr = Integer.parseInt(customerPnrtemp);
+            return pNr;
+        }
+        catch (Exception e){
+            throw new Exception();
+        }
+    }
+
+    public boolean isANumber(String s){
+        String regex="\\d+";
+        return s.matches(regex);//returns true if input and regex matches otherwise false;
     }
 
     public void LagNyKundeOnClick(ActionEvent actionEvent){
