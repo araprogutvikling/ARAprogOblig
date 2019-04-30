@@ -62,17 +62,17 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="262.0" prefHeight="46.0" prefWidth="162.0" text="Fritidsboligforsikring:">
+                        <Label layoutX="17.0" layoutY="330.0" prefHeight="46.0" prefWidth="162.0" text="Fritidsboligforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="295.0" prefHeight="46.0" prefWidth="162.0" text="Båtforsikring:">
+                        <Label layoutX="17.0" layoutY="262.0" prefHeight="46.0" prefWidth="162.0" text="Båtforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="17.0" layoutY="330.0" prefHeight="46.0" prefWidth="162.0" text="Reiseforsikring:">
+                        <Label layoutX="17.0" layoutY="295.0" prefHeight="46.0" prefWidth="162.0" text="Reiseforsikring:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -229,11 +229,6 @@
                         <Button fx:id="btnNewBoat" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
                         <Button fx:id="btnChangeBoat" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
                         <Button fx:id="btnDelBoat" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
-                        <Label fx:id="lblHInsuranceVC11" layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0">
-                           <font>
-                              <Font name="System Bold" size="14.0" />
-                           </font>
-                        </Label>
                         <Label layoutX="18.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet:">
                            <font>
                               <Font name="System Bold" size="14.0" />

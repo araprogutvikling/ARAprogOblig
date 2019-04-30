@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,19 +22,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="212" column="57" selection-start-line="212" selection-start-column="57" selection-end-line="212" selection-end-column="57" />
+            <state relative-caret-position="-452">
+              <caret line="129" column="102" selection-start-line="129" selection-start-column="102" selection-end-line="129" selection-end-column="102" />
               <folding>
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2169#2170#0" expanded="true" />
-                <element signature="e#2700#2847#0" expanded="true" />
-                <element signature="e#2846#2847#0" expanded="true" />
-                <element signature="e#3083#3979#0" expanded="true" />
-                <element signature="e#3199#3954#0" expanded="true" />
-                <element signature="e#3953#3954#0" expanded="true" />
-                <element signature="e#3978#3979#0" expanded="true" />
-                <element signature="e#4597#6634#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2117#2118#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#1820#1967#0" expanded="true" />
+                <element signature="e#1966#1967#0" expanded="true" />
+                <element signature="e#2203#3099#0" expanded="true" />
+                <element signature="e#2319#3074#0" expanded="true" />
+                <element signature="e#3073#3074#0" expanded="true" />
+                <element signature="e#3098#3099#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Loading.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -43,20 +64,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="238">
+              <caret line="14" column="80" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9078">
+              <caret line="534" column="61" selection-start-line="534" selection-start-column="41" selection-end-line="534" selection-end-column="61" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -65,8 +91,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -98,6 +124,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/GetSelectedCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" />
       </list>
     </option>
@@ -128,6 +156,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ARAprog" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,44 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ARAprog" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,7 +258,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.32528734" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -379,13 +410,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63989000" />
+    <option name="totallyTimeSpent" value="68775000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1356674" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -394,7 +425,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32713348" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -533,12 +564,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Polices.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -564,43 +595,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9078">
+          <caret line="534" column="61" selection-start-line="534" selection-start-column="41" selection-end-line="534" selection-end-column="61" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Loading.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="212" column="57" selection-start-line="212" selection-start-column="57" selection-end-line="212" selection-end-column="57" />
+        <state relative-caret-position="-452">
+          <caret line="129" column="102" selection-start-line="129" selection-start-column="102" selection-end-line="129" selection-end-column="102" />
           <folding>
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2169#2170#0" expanded="true" />
-            <element signature="e#2700#2847#0" expanded="true" />
-            <element signature="e#2846#2847#0" expanded="true" />
-            <element signature="e#3083#3979#0" expanded="true" />
-            <element signature="e#3199#3954#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="e#3978#3979#0" expanded="true" />
-            <element signature="e#4597#6634#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#1820#1967#0" expanded="true" />
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2203#3099#0" expanded="true" />
+            <element signature="e#2319#3074#0" expanded="true" />
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3098#3099#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,12 +654,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Forsikringsselskap</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32528734" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.openjfx:javafx-base:11.0.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32528734" />
               </list>
             </option>
           </splitter-proportions>
