@@ -18,6 +18,7 @@ import javafx.stage.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Controller{
@@ -104,31 +105,66 @@ public class Controller{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        modalBack(primaryStage);
+    }
+
+    public void modalBack(Stage stage){
         Scene scene = new Scene(nyKundeScene);
-        Stage modal= new Stage();
+        Stage modal = new Stage();
         modal.setScene(scene);
-        modal.initOwner(primaryStage);
+        modal.initOwner(stage);
         modal.initModality(Modality.APPLICATION_MODAL);
         modal.showAndWait();
     }
 
-    public void LagNyKundeOnClick(ActionEvent actionEvent){
 
-        try{
+    public void LagNyKundeOnClick(ActionEvent actionEvent) {
+        try {
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();
             this.loadingScene = FXMLLoader.load(getClass().getResource("/FXML/Loading.fxml"));
             Scene scene = new Scene(loadingScene);
             loadingStage.setScene(scene);
-            /*Customer newCustomer;
-            newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
-                    inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
-                    inputPhone.getText(), inputEmail.getText());
-            loadingStage.close();*/
+            loadingStage.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
+
+   /* public int customerNewPnr(){
+        int pNr;
+        String customerPnrtemp = InputPnr.getText();
+        if (customerPnrtemp.length() < 10){
+            return Exception toLongPnr;
+        }
+        if (customerPnrtemp.length() > 10){
+           return Exception toShortPnr;
+        }
+        if (customerPnrtemp.indexOf(' ')<=1){
+            return Exception spaceInPnr;
+        }
+        try{
+            int[] oneToNine = new int[];
+            for (int i = 0; i < 9; i ++) {
+                oneToNine[i] += i;
+            }
+            String arrCheck = null;
+            char[] arr = customerPnrtemp.toCharArray();
+            for(char c : arr){
+                if (c != oneToNine[0-9]){
+                    return Exception notANumber;
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        pNr = Integer.parseInt(customerPnrtemp);
+        return pNr;
+
+    }*/
+
 
     public void btnNyKundeLukk(ActionEvent actionEvent){
         Node node = (Node) actionEvent.getSource();
