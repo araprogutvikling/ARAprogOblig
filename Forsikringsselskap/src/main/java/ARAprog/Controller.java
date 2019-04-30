@@ -20,8 +20,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static ARAprog.SetSelectedCustomer.parseCustomerData;
-
 public class Controller{
     Service<Void> dataLoaderThread;
     ArrayList<String> data = new ArrayList<>();
@@ -29,6 +27,7 @@ public class Controller{
     @FXML
     public Button btnNyKundeLukk;
     public Button btnNyku;
+    public Button btnDelCustomer;
     public TextField InputPnr;
     public TextField inputAge;
     public TextField inputFirstName;
@@ -53,7 +52,6 @@ public class Controller{
     public Parent nyKundeScene, loadingScene;
 
     @FXML public void initialize(){
-        clearTextFields();
     }
 
     public void readFile(){
@@ -99,6 +97,7 @@ public class Controller{
 
                         } else if (finalFileType == "Java object") {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
+                            //TODO: Make this reader work
 
                         } else {
                             //TODO: Make a better error
@@ -125,12 +124,85 @@ public class Controller{
     }
 
     //TODO: Sort methods into corresponding classes
-    private void getSelectedCustomer(){
-        SetSelectedCustomer selectedCustomer = new SetSelectedCustomer();
-        selectedCustomer.setSelectedCustomer(ScrollList.getSelectionModel().getSelectedIndex(), data);
+    public void deleteData(ActionEvent actionEvent){
+
+        if(actionEvent.getSource().equals(btnDelCustomer)){
+            int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
+            data.remove(selectedCustomer);
+            ScrollList.refresh();
+        }
+
     }
 
+    private static String[] parseCustomerData(String data){
+        String[] customerDataList = data.split(";");
+        //TODO: Add exception checks with error messages
+        return customerDataList;
+    }
 
+    public void getSelectedCustomer(){
+        int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
+        String[] selectedCustomerData = parseCustomerData(data.get(selectedCustomer));
+        //"Oversikt" tab'en
+        lblOCustomer.setText("Kundenr: " + selectedCustomerData[0] + " | Navn: " + selectedCustomerData[1] + " " + selectedCustomerData[2] + " | Personnr: " + selectedCustomerData[3]);
+        lblOAddress.setText("Faktureringsadresse: " + selectedCustomerData[4] + ", " + selectedCustomerData[5] + " " + selectedCustomerData[6]);
+        lblOCustomerStart.setText("Kundeforhold opprettet: " + selectedCustomerData[7]);
+        lblOYN1.setText(selectedCustomerData[8]);
+        lblOYN2.setText(selectedCustomerData[9]);
+        lblOYN3.setText(selectedCustomerData[10]);
+        lblOYN4.setText(selectedCustomerData[11]);
+
+        //"Hus og innbo" tab'en
+        lblHInsuranceNr1.setText(selectedCustomerData[12]);
+        lblHInsurancePrm1.setText(selectedCustomerData[13]);
+        lblHDateForInsurance1.setText(selectedCustomerData[14]);
+        lblHAmountInsurance1.setText(selectedCustomerData[15]);
+        lblHAddress1.setText(selectedCustomerData[16] + ", " + selectedCustomerData[17] + " " + selectedCustomerData[18]);
+        lblHType1.setText(selectedCustomerData[19]);
+        lblHBuildingMaterial1.setText(selectedCustomerData[20]);
+        lblHStandard1.setText(selectedCustomerData[21]);
+        lblHSquaremeter1.setText(selectedCustomerData[22]);
+        lblHInsuranceVB1.setText(selectedCustomerData[23]);
+        lblHInsuranceVC1.setText(selectedCustomerData[24]);
+
+        //"Båtforsikring" tab'en
+        lblBInsuranceNr1.setText(selectedCustomerData[25]);
+        lblBInsurancePrm1.setText(selectedCustomerData[26]);
+        lblBDateForInsurance2.setText(selectedCustomerData[27]);
+        lblBAmountInsurance1.setText(selectedCustomerData[28]);
+        lblBOwner1.setText(selectedCustomerData[29] + " " + selectedCustomerData[30]);
+        lblBRegNr1.setText(selectedCustomerData[31]);
+        lblBTypeModel1.setText(selectedCustomerData[32]);
+        lblHType11.setText(selectedCustomerData[33]);
+        lblBYear1.setText(selectedCustomerData[34]);
+        lblBMotor1.setText(selectedCustomerData[35]);
+
+        //"Reiseforsikring" tab'en
+        lblTInsuranceNr1.setText(selectedCustomerData[36]);
+        lblTInsurancePrm1.setText(selectedCustomerData[37]);
+        lblTDateForInsurance1.setText(selectedCustomerData[38]);
+        lblTAmountInsurance1.setText(selectedCustomerData[39]);
+        lblAreaInsurance1.setText(selectedCustomerData[40] + ", " + selectedCustomerData[41] + ", " + selectedCustomerData[42] + ", " + selectedCustomerData[43] + ", " + selectedCustomerData[44]);
+        lblTSumInsurance1.setText(selectedCustomerData[45]);
+
+        //"Fritidsboligforsikring" tab'en
+        lblCInsuranceNr1.setText(selectedCustomerData[46]);
+        lblCInsurancePrm1.setText(selectedCustomerData[47]);
+        lblCDateForInsurance1.setText(selectedCustomerData[48]);
+        lblCAmountInsurance1.setText(selectedCustomerData[49]);
+        lblCAddress1.setText(selectedCustomerData[50]);
+        lblCType1.setText(selectedCustomerData[51]);
+        lblCBuildingMaterial1.setText(selectedCustomerData[52]);
+        lblCStandard1.setText(selectedCustomerData[53]);
+        lblCSquaremeter1.setText(selectedCustomerData[54]);
+        lblCInsuranceVB1.setText(selectedCustomerData[55]);
+        lblCInsuranceVC1.setText(selectedCustomerData[56]);
+
+        //"Skademeldinger/Historikk" tab'en
+        for (int i = 57; i < selectedCustomerData.length; i++){
+            ListForClaimsHistory.getItems().add(selectedCustomerData[i]);
+        }
+    }
 
     public void btnNykunde(ActionEvent actionEvent) {
         Node node = (Node) actionEvent.getSource();
@@ -175,6 +247,7 @@ public class Controller{
     }
 
     private void clearTextFields(){
+        lblOCustomer.setText("----------");
         lblOAddress.setText("----------");
         lblOCustomerStart.setText("----------");
         lblHInsuranceNr1.setText("----------");
