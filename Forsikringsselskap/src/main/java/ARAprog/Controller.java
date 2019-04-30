@@ -15,7 +15,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.*;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -38,11 +37,9 @@ public class Controller{
     public TextField inputEmail;
     public Button btnReadFile;
     public ListView ScrollList;
-
     public Parent nyKundeScene, loadingScene;
 
     @FXML public void initialize(){
-
     }
 
     public void readFile() {
@@ -105,20 +102,21 @@ public class Controller{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        modalBack(primaryStage);
+        Scene scene = new Scene(nyKundeScene);
+        modalBack(primaryStage, scene);
     }
 
-    public void modalBack(Stage stage){
-        Scene scene = new Scene(nyKundeScene);
+    public void modalBack(Stage stage, Scene newScene){
+
         Stage modal = new Stage();
-        modal.setScene(scene);
+        modal.setScene(newScene);
         modal.initOwner(stage);
         modal.initModality(Modality.APPLICATION_MODAL);
         modal.showAndWait();
     }
 
 
-    public void LagNyKundeOnClick(ActionEvent actionEvent) {
+    public void LagNyKundeOnClick(ActionEvent actionEvent){
         try {
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();
@@ -129,41 +127,33 @@ public class Controller{
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
-   /* public int customerNewPnr(){
+   public int customerNewPnr() throws Exception {
         int pNr;
         String customerPnrtemp = InputPnr.getText();
         if (customerPnrtemp.length() < 10){
-            return Exception toLongPnr;
+            throw new Exception();
         }
         if (customerPnrtemp.length() > 10){
-           return Exception toShortPnr;
+            throw new Exception();
         }
-        if (customerPnrtemp.indexOf(' ')<=1){
-            return Exception spaceInPnr;
+        if (!isANumber(customerPnrtemp)) {
+            throw new Exception();
         }
-        try{
-            int[] oneToNine = new int[];
-            for (int i = 0; i < 9; i ++) {
-                oneToNine[i] += i;
-            }
-            String arrCheck = null;
-            char[] arr = customerPnrtemp.toCharArray();
-            for(char c : arr){
-                if (c != oneToNine[0-9]){
-                    return Exception notANumber;
-                }
-            }
+        try {
+            pNr = Integer.parseInt(customerPnrtemp);
+            return pNr;
+        }
+        catch (Exception e){
+            throw new Exception();
+        }
+    }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        pNr = Integer.parseInt(customerPnrtemp);
-        return pNr;
-
-    }*/
+    public boolean isANumber(String s){
+        String regex="\\d+";
+        return s.matches(regex);//returns true if input and regex matches otherwise false;
+    }
 
 
     public void btnNyKundeLukk(ActionEvent actionEvent){
