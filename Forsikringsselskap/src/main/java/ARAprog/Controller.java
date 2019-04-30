@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.*;
 
@@ -27,6 +24,11 @@ public class Controller{
 
     @FXML
     public Button btnNyKundeLukk;
+    public Button btnClosePopup;
+    public Button btnTInsuranceConditions1;
+    public Button btnHInsuranceConditions;
+    public Label lblPopup;
+    public Button showTerms;
     public Button btnNyku;
     public TextField InputPnr;
     public TextField inputAge;
@@ -48,10 +50,11 @@ public class Controller{
             lblAreaInsurance1, lblCInsuranceNr1, lblCInsurancePrm1, lblCAddress1, lblCType1, lblCBuildingMaterial1, lblHInsuranceVC1,
             lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
-    public Parent nyKundeScene, loadingScene;
+    public Parent nyKundeScene, loadingScene, termsAppear;
+
 
     @FXML public void initialize(){
-        clearTextFields();
+
     }
 
     public void readFile(){
@@ -223,6 +226,40 @@ public class Controller{
     }
 
     public void btnNyKundeLukk(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage modal = (Stage) node.getScene().getWindow();
+        modal.close();
+    }
+
+
+    public void showTerms (ActionEvent actionEvent) {
+        if (actionEvent.getSource().equals(btnHInsuranceConditions)){
+
+            String text = PopupTermsData.popupTermsData("btnHInsuranceConditions");
+            lblPopup.setText(text);
+        }
+        Node node = (Node) actionEvent.getSource();
+        Stage stage  = (Stage) node.getScene().getWindow();
+        try {
+            this.termsAppear = FXMLLoader.load(getClass().getResource("/FXML/PopupTerms.fxml"));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+        Scene scene = new Scene(termsAppear);
+        Stage modal= new Stage();
+        modal.setScene(scene);
+        modal.initOwner(stage);
+        modal.initModality(Modality.APPLICATION_MODAL);
+        modal.showAndWait();
+    }
+
+
+
+    public void btnClosePopup (ActionEvent actionEvent) {
         Node node = (Node) actionEvent.getSource();
         Stage modal = (Stage) node.getScene().getWindow();
         modal.close();
