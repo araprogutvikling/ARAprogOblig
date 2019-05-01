@@ -19,27 +19,22 @@ import javafx.stage.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Controller{
     Service<Void> dataLoaderThread;
     ArrayList<String> data = new ArrayList<>();
 
     @FXML
-    public Button btnNyKundeLukk;
-    public Button btnNyku;
-    public Button btnDelCustomer;
-    public TextField InputPnr;
-    public TextField inputAge;
-    public TextField inputFirstName;
-    public TextField inputLastName;
-    public TextField inputAdress;
-    public TextField inputZipCode;
-    public TextField InputArea;
-    public TextField inputPhone;
-    public TextField inputEmail;
-    public Button btnReadFile;
-    public ListView ListForClaimsHistory;
-    public ListView ScrollList;
+    public Button btnNyku, btnDelCustomer, btnChangeO, btnReadFile, btnChangeH,
+            btnDelH, btnChangeBoat, btnDelBoat, btnChangeT, btnDelT, btnChangeC,
+            btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC;
+
+    public TextField InputPnr, inputAge, inputFirstName, inputLastName, inputAdress,
+            inputZipCode, InputArea, inputPhone, inputEmail;
+
+    public ListView ListForClaimsHistory, ScrollList;
+
     public Label lblOCustomer, lblOAddress, lblOCustomerStart, lblOYN1, lblOYN2, lblOYN3, lblOYN4, lblHInsuranceNr1,
             lblHInsurancePrm1, lblHAddress1, lblHType1, lblHBuildingMaterial1, lblHStandard1, lblHSquaremeter1,
             lblHInsuranceVB1, lblHDateForInsurance1, lblHAmountInsurance1, lblBInsuranceNr1, lblBInsurancePrm1,
@@ -51,8 +46,7 @@ public class Controller{
     @FXML
     public Parent nyKundeScene, loadingScene;
 
-    @FXML public void initialize(){
-    }
+    @FXML public void initialize(){}
 
     public void readFile(){
         FileChooser fileChooser = new FileChooser();
@@ -124,14 +118,106 @@ public class Controller{
     }
 
     //TODO: Sort methods into corresponding classes
-    public void deleteData(ActionEvent actionEvent){
+    public String unParseData(String[] string){
+        String newText = "";
 
-        if(actionEvent.getSource().equals(btnDelCustomer)){
-            int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
-            data.remove(selectedCustomer);
-            ScrollList.refresh();
+        for (int i = 0; i < string.length; i++){
+            if(i == string.length - 1){
+                newText += string[i];
+            }
+            else {
+                newText += string[i] + ";";
+            }
         }
 
+        return newText;
+    }
+    public void deleteData(ActionEvent actionEvent){
+        //TODO: Make proper error checks
+        int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
+        String[] selectedCustomerData =  parseCustomerData(data.get(selectedCustomer));
+
+
+        if(actionEvent.getSource().equals(btnDelH)){
+            clearLabel(lblHInsuranceNr1);
+            clearLabel(lblHInsurancePrm1);
+            clearLabel(lblHDateForInsurance1);
+            clearLabel(lblHAmountInsurance1);
+            clearLabel(lblHAddress1);
+            clearLabel(lblHType1);
+            clearLabel(lblHBuildingMaterial1);
+            clearLabel(lblHStandard1);
+            clearLabel(lblHSquaremeter1);
+            clearLabel(lblHInsuranceVB1);
+            clearLabel(lblHInsuranceVC1);
+
+            Arrays.fill(selectedCustomerData, 8, 9, "Nei");
+
+            Arrays.fill(selectedCustomerData, 12, 25, "----------");
+
+            btnDelH.setDisable(true);
+            btnChangeH.setDisable(true);
+            btnNewH.setDisable(false);
+            data.add(selectedCustomer, unParseData(selectedCustomerData));
+        }
+        else if(actionEvent.getSource().equals(btnDelBoat)){
+            clearLabel(lblBInsuranceNr1);
+            clearLabel(lblBInsurancePrm1);
+            clearLabel(lblBDateForInsurance2);
+            clearLabel(lblBAmountInsurance1);
+            clearLabel(lblBOwner1);
+            clearLabel(lblBRegNr1);
+            clearLabel(lblBTypeModel1);
+            clearLabel(lblHType11);
+            clearLabel(lblBYear1);
+            clearLabel(lblBMotor1);
+
+            Arrays.fill(selectedCustomerData, 9, 10, "Nei");
+
+            Arrays.fill(selectedCustomerData, 25, 36, "----------");
+
+            btnChangeBoat.setDisable(true);
+            btnDelBoat.setDisable(true);
+            btnNewBoat.setDisable(false);
+            data.add(selectedCustomer, unParseData(selectedCustomerData));
+        }
+        else if(actionEvent.getSource().equals(btnDelT)){
+            clearLabel(lblTInsuranceNr1);
+            clearLabel(lblTInsurancePrm1);
+            clearLabel(lblTDateForInsurance1);
+            clearLabel(lblTAmountInsurance1);
+            clearLabel(lblAreaInsurance1);
+            clearLabel(lblTSumInsurance1);
+
+            Arrays.fill(selectedCustomerData, 10, 11, "Nei");
+
+            Arrays.fill(selectedCustomerData, 36, 46, "----------");
+
+            btnChangeT.setDisable(true);
+            btnDelT.setDisable(true);
+            btnNewT.setDisable(false);
+            data.add(selectedCustomer, unParseData(selectedCustomerData));
+        }
+
+
+
+        if(actionEvent.getSource().equals(btnDelCustomer)){
+            data.remove(selectedCustomer);
+            ScrollList.getItems().clear();
+            clearTextFields();
+            if(!data.isEmpty()){
+                for(String text : data){
+                    String[] string = parseCustomerData(text);
+                    ScrollList.getItems().add("Kundenr: " + string[0] + " " + string[1] + " " + string[2]);
+                }
+            }
+            btnDelCustomer.setDisable(true);
+            btnChangeO.setDisable(true);
+        }
+    }
+
+    private void clearLabel(Label label){
+        label.setText("----------");
     }
 
     private static String[] parseCustomerData(String data){
@@ -143,6 +229,51 @@ public class Controller{
     public void getSelectedCustomer(){
         int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
         String[] selectedCustomerData = parseCustomerData(data.get(selectedCustomer));
+
+        btnDelCustomer.setDisable(false);
+        btnChangeO.setDisable(false);
+
+        if (selectedCustomerData[8].equals("Ja")){
+            btnDelH.setDisable(false);
+            btnChangeH.setDisable(false);
+            btnNewH.setDisable(true);
+        }
+        else{
+            btnDelH.setDisable(true);
+            btnChangeH.setDisable(true);
+            btnNewH.setDisable(false);
+        }
+        if(selectedCustomerData[9].equals("Ja")){
+            btnChangeBoat.setDisable(false);
+            btnDelBoat.setDisable(false);
+            btnNewBoat.setDisable(true);
+        }
+        else{
+            btnChangeBoat.setDisable(true);
+            btnDelBoat.setDisable(true);
+            btnNewBoat.setDisable(false);
+        }
+        if(selectedCustomerData[10].equals("Ja")){
+            btnChangeT.setDisable(false);
+            btnDelT.setDisable(false);
+            btnNewT.setDisable(true);
+        }
+        else{
+            btnChangeT.setDisable(true);
+            btnDelT.setDisable(true);
+            btnNewT.setDisable(false);
+        }
+        if(selectedCustomerData[11].equals("Ja")){
+            btnChangeC.setDisable(false);
+            btnDelC.setDisable(false);
+            btnNewC.setDisable(true);
+        }
+        else{
+            btnChangeC.setDisable(true);
+            btnDelC.setDisable(true);
+            btnNewC.setDisable(false);
+        }
+
         //"Oversikt" tab'en
         lblOCustomer.setText("Kundenr: " + selectedCustomerData[0] + " | Navn: " + selectedCustomerData[1] + " " + selectedCustomerData[2] + " | Personnr: " + selectedCustomerData[3]);
         lblOAddress.setText("Faktureringsadresse: " + selectedCustomerData[4] + ", " + selectedCustomerData[5] + " " + selectedCustomerData[6]);
