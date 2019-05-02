@@ -11,7 +11,13 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class NyKundeController {
+
+    public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
+            Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 
     @FXML
     public TextField inputPnr, inputFirstName, inputLastName, inputAdress, inputZipCode, InputArea,
@@ -97,19 +103,12 @@ public class NyKundeController {
         }
     }
 
-    public boolean checkEmail(String s){
-        if (s.length() != 0){
-            return false;
-        }
-        if (!s.contains("@")){
-            return false;
-        }
-        String [] splittAlpha = s.split("@");
-        if (splittAlpha.length != 2){
-            return false;
-        }
-        return true;
 
+
+    public boolean checkEmail(String s){
+
+        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(s);
+        return matcher.find();
     }
 
     public boolean checkTlf(String s){
@@ -143,14 +142,11 @@ public class NyKundeController {
     }
 
     public boolean checkZip(String s){
-        if (s.length()==0){
-            return false;
-        }
         if (s.length()!=4){
             return false;
         }
         try {
-            long temp = Long.parseLong(s);
+            int temp = Integer.parseInt(s);
             if (temp <= 0 ){
                 return false;
             }

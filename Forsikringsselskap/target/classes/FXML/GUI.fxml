@@ -31,19 +31,18 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnChangeO" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelCustomer" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" text="Slett kunde" />
-                        <Label fx:id="lblOCustomer" layoutX="17.0" layoutY="21.0" prefHeight="46.0" prefWidth="807.0" text="Kundenr, navn, personnr">
+                        <Button fx:id="btnDelCustomer" disable="true" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett kunde" />
+                        <Label fx:id="lblOCustomer" layoutX="17.0" layoutY="21.0" prefHeight="46.0" prefWidth="807.0" text="----------">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblOAddress" layoutX="17.0" layoutY="86.0" prefHeight="46.0" prefWidth="807.0" text="Faktureringsadresse">
+                        <Label fx:id="lblOAddress" layoutX="17.0" layoutY="86.0" prefHeight="46.0" prefWidth="807.0" text="----------">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblOCustomerStart" layoutX="17.0" layoutY="140.0" prefHeight="46.0" prefWidth="807.0" text="Kundeforhold opprettet">
+                        <Label fx:id="lblOCustomerStart" layoutX="17.0" layoutY="140.0" prefHeight="46.0" prefWidth="807.0" text="----------">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -101,9 +100,8 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnNewH" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNyHus" text="Opprett ny forsikring" />
-                        <Button fx:id="btnChangeH" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelH" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnNewH" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
+                        <Button fx:id="btnDelH" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
                               <Font name="System Bold" size="14.0" />
@@ -149,47 +147,47 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                        <Label fx:id="lblHInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                        <Label fx:id="lblHInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHAddress1" layoutX="270.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="Adresse her">
+                        <Label fx:id="lblHAddress1" layoutX="270.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHType1" layoutX="270.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="Boligtype her">
+                        <Label fx:id="lblHType1" layoutX="270.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHBuildingMaterial1" layoutX="270.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="Byggemateriale her">
+                        <Label fx:id="lblHBuildingMaterial1" layoutX="270.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHStandard1" layoutX="270.0" layoutY="278.0" prefHeight="46.0" prefWidth="201.0" text="Standard her">
+                        <Label fx:id="lblHStandard1" layoutX="270.0" layoutY="278.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHSquaremeter1" layoutX="270.0" layoutY="301.0" prefHeight="46.0" prefWidth="201.0" text="Antall kvadramt her">
+                        <Label fx:id="lblHSquaremeter1" layoutX="270.0" layoutY="301.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHInsuranceVB1" layoutX="270.0" layoutY="324.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp fro B her">
+                        <Label fx:id="lblHInsuranceVB1" layoutX="270.0" layoutY="324.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHInsuranceVC1" layoutX="270.0" layoutY="347.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp for I her">
+                        <Label fx:id="lblHInsuranceVC1" layoutX="270.0" layoutY="347.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -199,7 +197,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Dato for opprettet forsikring her">
+                        <Label fx:id="lblHDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -209,7 +207,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                        <Label fx:id="lblHAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -223,8 +221,7 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Button fx:id="btnNewBoat" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
-                        <Button fx:id="btnChangeBoat" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelBoat" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnDelBoat" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet:">
                            <font>
                               <Font name="System Bold" size="14.0" />
@@ -265,42 +262,42 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                        <Label fx:id="lblBInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                        <Label fx:id="lblBInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBOwner1" layoutX="270.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Eier her">
+                        <Label fx:id="lblBOwner1" layoutX="270.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblHType11" layoutX="270.0" layoutY="288.0" prefHeight="46.0" prefWidth="201.0" text="Lengde i fot her">
+                        <Label fx:id="lblHType11" layoutX="270.0" layoutY="288.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBTypeModel1" layoutX="270.0" layoutY="265.0" prefHeight="46.0" prefWidth="201.0" text="Båttype og modell her">
+                        <Label fx:id="lblBTypeModel1" layoutX="270.0" layoutY="265.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBRegNr1" layoutX="270.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="Registreringsnummer her">
+                        <Label fx:id="lblBRegNr1" layoutX="270.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBYear1" layoutX="270.0" layoutY="311.0" prefHeight="46.0" prefWidth="201.0" text="Årsmodell her">
+                        <Label fx:id="lblBYear1" layoutX="270.0" layoutY="311.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBMotor1" layoutX="270.0" layoutY="334.0" prefHeight="46.0" prefWidth="201.0" text="Motortype-og styrke her">
+                        <Label fx:id="lblBMotor1" layoutX="270.0" layoutY="334.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -310,7 +307,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                        <Label fx:id="lblBAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -320,7 +317,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblBDateForInsurance2" layoutX="270.0" layoutY="87.0" prefHeight="42.0" prefWidth="209.0" text="Dato for opprettet her">
+                        <Label fx:id="lblBDateForInsurance2" layoutX="270.0" layoutY="87.0" prefHeight="42.0" prefWidth="209.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -334,14 +331,13 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Button fx:id="btnNewT" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
-                        <Button fx:id="btnChangeT" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelT" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnDelT" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblTInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                        <Label fx:id="lblTInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -361,17 +357,17 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblTInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                        <Label fx:id="lblTInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblTDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet her">
+                        <Label fx:id="lblTDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblTAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                        <Label fx:id="lblTAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -382,7 +378,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAreaInsurance1" layoutX="270.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsområde her">
+                        <Label fx:id="lblAreaInsurance1" layoutX="270.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -392,7 +388,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblTSumInsurance1" layoutX="270.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringssum her">
+                        <Label fx:id="lblTSumInsurance1" layoutX="270.0" layoutY="242.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -405,8 +401,7 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Button fx:id="btnNewC" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
-                        <Button fx:id="btnChangeC" layoutX="183.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelC" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnDelC" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
                               <Font name="System Bold" size="14.0" />
@@ -452,47 +447,47 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer her">
+                        <Label fx:id="lblCInsuranceNr1" layoutX="270.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringspremie her">
+                        <Label fx:id="lblCInsurancePrm1" layoutX="270.0" layoutY="58.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCAddress1" layoutX="270.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="Adresse her">
+                        <Label fx:id="lblCAddress1" layoutX="270.0" layoutY="209.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCType1" layoutX="270.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="Boligtype her">
+                        <Label fx:id="lblCType1" layoutX="270.0" layoutY="232.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCBuildingMaterial1" layoutX="270.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="Byggemateriale her">
+                        <Label fx:id="lblCBuildingMaterial1" layoutX="270.0" layoutY="255.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCStandard1" layoutX="270.0" layoutY="277.0" prefHeight="46.0" prefWidth="201.0" text="Standard her">
+                        <Label fx:id="lblCStandard1" layoutX="270.0" layoutY="277.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCSquaremeter1" layoutX="270.0" layoutY="300.0" prefHeight="46.0" prefWidth="201.0" text="Antall kvadramt her">
+                        <Label fx:id="lblCSquaremeter1" layoutX="270.0" layoutY="300.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCInsuranceVB1" layoutX="270.0" layoutY="323.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp fro B her">
+                        <Label fx:id="lblCInsuranceVB1" layoutX="270.0" layoutY="323.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCInsuranceVC1" layoutX="270.0" layoutY="346.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp for I her">
+                        <Label fx:id="lblCInsuranceVC1" layoutX="270.0" layoutY="346.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -502,7 +497,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Dato for opprettet forsikring her">
+                        <Label fx:id="lblCDateForInsurance1" layoutX="270.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -512,7 +507,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblCAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsbeløp her">
+                        <Label fx:id="lblCAmountInsurance1" layoutX="270.0" layoutY="116.0" prefHeight="46.0" prefWidth="201.0" text="----------">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -525,16 +520,15 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnChangeHis" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Endre" />
-                        <Button fx:id="btnDelHis" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnDelHis" disable="true" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
                         <Button layoutX="155.0" layoutY="450.0" mnemonicParsing="false" text="Ny skademelding" />
-                        <ListView fx:id="ListForClaimsHistory" layoutX="25.0" layoutY="17.0" prefHeight="406.0" prefWidth="759.0" />
+                        <ListView fx:id="ListForClaimsHistory" layoutX="25.0" layoutY="17.0" onMouseClicked="#getSelectedSkademelding" prefHeight="406.0" prefWidth="759.0" />
                      </children></AnchorPane>
                </content>
             </Tab>
         </tabs>
       </TabPane>
-      <Button layoutX="1094.0" layoutY="549.0" mnemonicParsing="false" text="Lagre">
+      <Button layoutX="1094.0" layoutY="549.0" mnemonicParsing="false" onAction="#saveFile" text="Lagre">
          <font>
             <Font size="14.0" />
          </font>

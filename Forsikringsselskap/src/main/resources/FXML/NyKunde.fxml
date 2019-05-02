@@ -5,25 +5,26 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controllers.NyKundeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.NyKundeController">
    <children>
       <Button fx:id="buttonLagNyKunde" layoutX="379.0" layoutY="345.0" mnemonicParsing="false" onAction="#LagNyKundeOnClick" text="Lag ny kunde" />
       <TextField fx:id="inputPnr" layoutX="58.0" layoutY="47.0" onKeyReleased="#verifyPnr" prefHeight="31.0" prefWidth="231.0" promptText="Fødsel og personnummer" />
       <TextField fx:id="inputFirstName" layoutX="58.0" layoutY="92.0" onKeyReleased="#verifyFirsName" prefHeight="31.0" prefWidth="231.0" promptText="Fornavn" />
       <TextField fx:id="inputLastName" layoutX="318.0" layoutY="92.0" onKeyReleased="#verifyLastName" prefHeight="31.0" prefWidth="231.0" promptText="Etternavn" />
       <TextField fx:id="inputZipCode" layoutX="318.0" layoutY="138.0" onKeyReleased="#verifyZipcode" prefHeight="31.0" prefWidth="231.0" promptText="Postkode" />
-      <TextField fx:id="InputArea" layoutX="58.0" layoutY="185.0" prefHeight="31.0" prefWidth="231.0" promptText="Poststed" />
+      <TextField fx:id="InputArea" layoutX="58.0" layoutY="185.0" onKeyReleased="#verifyArea" prefHeight="31.0" prefWidth="231.0" promptText="Poststed" />
       <TextField fx:id="inputPhone" layoutX="318.0" layoutY="185.0" onKeyReleased="#verifyTlfNr" prefHeight="31.0" prefWidth="231.0" promptText="Telefonnummer" />
       <TextField fx:id="inputAdress" layoutX="58.0" layoutY="138.0" onKeyReleased="#verifyAdress" prefHeight="31.0" prefWidth="231.0" promptText="Adresse" />
-      <TextField fx:id="inputEmail" layoutX="58.0" layoutY="229.0" prefHeight="31.0" prefWidth="491.0" promptText="E-postadresse" />
+      <TextField fx:id="inputEmail" layoutX="58.0" layoutY="229.0" onKeyReleased="#verifyEmail" prefHeight="31.0" prefWidth="491.0" promptText="E-postadresse" />
       <Button layoutX="133.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnNyKundeLukk" text="Lukk " />
       <CheckBox fx:id="pNrCheck" disable="true" layoutX="291.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="firstNameCheck" disable="true" layoutX="291.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="checkLastName" disable="true" layoutX="552.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="checkAdress" disable="true" layoutX="291.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="checkZip" disable="true" layoutX="552.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
-      <CheckBox disable="true" layoutX="291.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="checkArea" disable="true" layoutX="291.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="tlfCheck" disable="true" layoutX="552.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="emailCheck" disable="true" layoutX="552.0" layoutY="234.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+
    </children>
 </AnchorPane>
