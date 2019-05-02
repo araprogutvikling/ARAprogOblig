@@ -24,7 +24,7 @@ public class NyKundeController {
     public Parent loadingScene;
 
 
-    public void LagNyKundeOnClick(ActionEvent actionEvent){
+    public void lagNyKundeOnClick(ActionEvent actionEvent){
         NewCustomer customer = new NewCustomer();
         customer.saveNewCustumer();
         try{
