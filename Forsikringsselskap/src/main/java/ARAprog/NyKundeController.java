@@ -47,7 +47,7 @@ public class NyKundeController {
 
     public void verifyArea(KeyEvent keyEvent){
         String tempArea = InputArea.getText();
-        boolean correctArea = checkArea(tempArea);
+        boolean correctArea = isAlpha(tempArea);
         setChecked(correctArea, InputArea, checkArea);
     }
 
@@ -106,18 +106,6 @@ public class NyKundeController {
         }
     }
 
-    public boolean checkArea(String s){
-        if (s.length()==0){
-            return false;
-        }
-        char[] chars = s.toCharArray();
-        for (char c : chars) {
-            if(!Character.isLetter(c)){
-                return false;
-            }
-        }
-        return true;
-    }
 
     public boolean checkEmail(String s){
 
