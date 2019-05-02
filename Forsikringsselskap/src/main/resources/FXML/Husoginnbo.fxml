@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.ControllerHus">
+   <children>
+      <Button fx:id="buttonOpprettNyHus" layoutX="379.0" layoutY="345.0" mnemonicParsing="false" onAction="#OpprettNyHus" text="Opprett ny forsikring" />
+      <TextField fx:id="hInputPremium" layoutX="58.0" layoutY="47.0" onKeyReleased="#verifyHpremium" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringspremie" />
+      <TextField fx:id="hInputAddress" layoutX="58.0" layoutY="92.0" onKeyReleased="#verifyHAddress" prefHeight="31.0" prefWidth="231.0" promptText="Boligens adresse" />
+      <TextField fx:id="hInputAmount" layoutX="318.0" layoutY="47.0" onKeyReleased="#verifyHAmount" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp" />
+      <TextField fx:id="inputHType" layoutX="318.0" layoutY="92.0" onKeyReleased="#verifyHType" prefHeight="31.0" prefWidth="231.0" promptText="Boligtype" />
+      <TextField fx:id="inputHStandard" layoutX="318.0" layoutY="138.0" onKeyReleased="#verifyHStandard" prefHeight="31.0" prefWidth="231.0" promptText="Standard" />
+      <TextField fx:id="inputHSquareM" layoutX="58.0" layoutY="185.0" onKeyReleased="#verifyHSquareM" prefHeight="31.0" prefWidth="231.0" promptText="Antall kvadratmeter" />
+      <TextField fx:id="inputHAmountB" layoutX="318.0" layoutY="185.0" onKeyReleased="#verifyHAmountB" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp for bygning" />
+      <TextField fx:id="inputHMaterial" layoutX="58.0" layoutY="138.0" onKeyReleased="#verifyHMaterial" prefHeight="31.0" prefWidth="231.0" promptText="Byggemateriale" />
+      <TextField fx:id="inputHAmountC" layoutX="58.0" layoutY="229.0" onKeyReleased="#verifyHAmountC" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp innbo" />
+      <Button fx:id="buttonLukkOpprettNyHus" layoutX="133.0" layoutY="345.0" mnemonicParsing="false" onAction="#lukkOpprettNyhus" text="Lukk " />
+      <CheckBox fx:id="hPremiumCb" disable="true" layoutX="291.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hAmountCb" disable="true" layoutX="552.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hAddressCb" disable="true" layoutX="291.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hTypeCb" disable="true" layoutX="552.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hMaterialCb" disable="true" layoutX="291.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hStandardCb" disable="true" layoutX="552.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hSquaremeterCb" disable="true" layoutX="291.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hAmountBCb" disable="true" layoutX="552.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="hAmountICb" disable="true" layoutX="291.0" layoutY="236.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+   </children>
+</AnchorPane>
