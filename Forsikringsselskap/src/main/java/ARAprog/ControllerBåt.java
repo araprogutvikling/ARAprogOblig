@@ -12,8 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
-import static ARAprog.NyKundeController.activateRegisterBTN;
-
 public class ControllerBåt {
     @FXML
     public TextField BInputPremium, bInputOwner, BInputAmount, inputbRegNr, inputBLength, inputBModel, inputBStrength,
@@ -25,7 +23,6 @@ public class ControllerBåt {
 
 
     public void opprettNyBåt(ActionEvent actionEvent){
-
         try{
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();
@@ -60,49 +57,41 @@ public class ControllerBåt {
         String tempArea = BInputPremium.getText();
         boolean correctArea = checkNumbers(tempArea);
         setChecked(correctArea, BInputPremium, bPremiumCb);
-        checkBoxSelected();
     }
     public void verifyBOwner (KeyEvent keyEvent){
         String tempOwnerPnr = bInputOwner.getText();
         boolean correctPnr = checkPnr(tempOwnerPnr);
         setChecked(correctPnr, bInputOwner, bAmountCb);
-        checkBoxSelected();
     }
     public void verifyBAmount (KeyEvent keyEvent){
         String tempBamount = BInputAmount.getText();
         boolean correctBAmount = checkNumbers(tempBamount);
         setChecked(correctBAmount, BInputAmount, bOwnerCb);
-        checkBoxSelected();
     }
     public void verifyBRegNr (KeyEvent keyEvent){
         String tempreg = inputbRegNr.getText();
         boolean correctReg = CheckReg(tempreg);
         setChecked(correctReg, inputbRegNr, bRegNrCb);
-        checkBoxSelected();
     }
     public void verifyBLength (KeyEvent keyEvent){
         String tempLength = inputBLength.getText();
         boolean correctLength = checkNumbers(tempLength);
         setChecked(correctLength, inputBLength, bTypeCb);
-        checkBoxSelected();
     }
     public void verifyBModel (KeyEvent keyEvent){
         String tempModell = inputBModel.getText();
         boolean correctModell = isAlpha(tempModell);
         setChecked(correctModell, inputBModel, bLengthCb);
-        checkBoxSelected();
     }
     public void verifyBStrength (KeyEvent keyEvent){
         String tempHP = inputBStrength.getText();
         boolean correctHP = checkNumbers(tempHP);
         setChecked(correctHP, inputBStrength, bModelCb);
-        checkBoxSelected();
     }
     public void verifyBType (KeyEvent keyEvent){
         String tempType = inputBType.getText();
         boolean correctType = isAlpha(tempType);
         setChecked(correctType, inputBType, bStrengthCb);
-        checkBoxSelected();
     }
     public boolean isAlpha(String s) {
         if (s.length()==0){
@@ -172,13 +161,6 @@ public class ControllerBåt {
         return true;
 }
 
-    public void checkBoxSelected(){
-        if (activateRegisterBTN(bPremiumCb, bAmountCb, bOwnerCb, bRegNrCb, bTypeCb, bLengthCb, bModelCb, bStrengthCb)){
-            buttonOpprettNyBåt.setDisable(false);
-        }
-        else {
-            buttonOpprettNyBåt.setDisable(true);
-        }
-    }
+
 
 }

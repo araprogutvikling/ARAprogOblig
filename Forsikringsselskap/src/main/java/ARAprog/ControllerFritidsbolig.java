@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import static ARAprog.NyKundeController.activateRegisterBTN;
 
 public class ControllerFritidsbolig {
+
     @FXML
     public TextField cInputPremium, cInputAddress, inputCType, inputCStandard, inputCSquareM, inputCAmountB,
             inputCMaterial, inputCAmountC;

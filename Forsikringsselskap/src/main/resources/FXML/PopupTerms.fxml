@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
    <children>
-      <Button cancelButton="true" layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnClosePopup" prefHeight="35.0" prefWidth="168.0" text="Lukk" />
-      <Label fx:id="lblPopup" layoutX="19.0" layoutY="27.0" prefHeight="17.0" prefWidth="557.0" text="Label" />
+      <Button fx:id="lukkPopup" cancelButton="true" layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnClosePopup" prefHeight="35.0" prefWidth="168.0" text="Lukk" />
+      <Label fx:id="lblPopup" layoutX="19.0" layoutY="27.0" prefHeight="318.0" prefWidth="557.0" text="Label" />
    </children>
 </AnchorPane>

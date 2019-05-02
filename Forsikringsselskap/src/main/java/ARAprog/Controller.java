@@ -29,7 +29,7 @@ public class Controller{
     @FXML
     public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis, btnHInsuranceConditions,
             btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus,
-            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions, btnNySkademelding;
+            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions, btnNySkademelding, lukkPopup;
 
     public ListView ListForClaimsHistory, ScrollList;
 
@@ -39,10 +39,10 @@ public class Controller{
             lblBOwner1, lblHType11, lblBTypeModel1, lblBRegNr1, lblBYear1, lblBMotor1, lblBAmountInsurance1,
             lblBDateForInsurance2, lblTInsuranceNr1, lblTInsurancePrm1, lblTDateForInsurance1, lblTAmountInsurance1, lblTSumInsurance1,
             lblAreaInsurance1, lblCInsuranceNr1, lblCInsurancePrm1, lblCAddress1, lblCType1, lblCBuildingMaterial1, lblHInsuranceVC1,
-            lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
+            lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1, lblPopup;
 
     @FXML
-    public Parent nyKundeScene, NyHusScene, nyBåtScene, nyReiseScene, nyFritidsboligScene, nySkadeScene;
+    public Parent nyKundeScene, NyHusScene, nyBåtScene, nyReiseScene, nyFritidsboligScene, nySkadeScene, PopupTermsScene;
 
     @FXML public void initialize(){}
 
@@ -183,6 +183,32 @@ public class Controller{
     public void getSelectedSkademelding(){
         btnDelHis.setDisable(false);
     }
+
+    public void showTerms(ActionEvent actionEvent){
+        if (actionEvent.getSource().equals(btnHInsuranceConditions)){
+
+            Node node = (Node) actionEvent.getSource();
+            Stage primaryStage = (Stage) node.getScene().getWindow();
+            try {
+                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTerms.fxml"));
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene scene = new Scene(PopupTermsScene);
+            modalBack(primaryStage, scene);
+            String text = PopupTermsData.popupTermsData("btnHInsuranceConditions");
+            lblPopup.setText(text);
+
+        }
+    }
+
+    public void btnClosePopup(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage modal = (Stage) node.getScene().getWindow();
+        modal.close();
+    }
+
 
     public void deleteData(ActionEvent actionEvent){
         //TODO: Make proper error checks
@@ -412,6 +438,8 @@ public class Controller{
             ListForClaimsHistory.getItems().add(selectedCustomerData[i]);
         }
     }
+
+
 
     public void btnNykunde(ActionEvent actionEvent){
         Node node = (Node) actionEvent.getSource();
