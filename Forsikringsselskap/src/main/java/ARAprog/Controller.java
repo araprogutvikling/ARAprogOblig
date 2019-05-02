@@ -27,8 +27,9 @@ public class Controller{
     ArrayList<String> data = new ArrayList<>();
 
     @FXML
-    public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis,
-            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus;
+    public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis, btnHInsuranceConditions,
+            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus,
+            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions;
 
     public ListView ListForClaimsHistory, ScrollList;
 
@@ -208,6 +209,7 @@ public class Controller{
 
             btnDelH.setDisable(true);
             btnNewH.setDisable(false);
+            btnHInsuranceConditions.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelBoat)){
@@ -228,6 +230,7 @@ public class Controller{
 
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
+            btnBInsuranceConditions.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelT)){
@@ -244,6 +247,7 @@ public class Controller{
 
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
+            btnTInsuranceConditions1.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelHis)){
@@ -258,6 +262,7 @@ public class Controller{
                 ListForClaimsHistory.getItems().add(selectedCustomerData[i]);
             }
             btnDelHis.setDisable(true);
+            btnCInsuranceConditions.setDisable(true);
         }
 
         if(actionEvent.getSource().equals(btnDelCustomer)){
@@ -309,34 +314,42 @@ public class Controller{
         if (selectedCustomerData[8].equals("Ja")){
             btnDelH.setDisable(false);
             btnNewH.setDisable(true);
+            btnHInsuranceConditions.setDisable(false);
         }
         else{
             btnDelH.setDisable(true);
             btnNewH.setDisable(false);
+            btnHInsuranceConditions.setDisable(true);
         }
         if(selectedCustomerData[9].equals("Ja")){
             btnDelBoat.setDisable(false);
             btnNewBoat.setDisable(true);
+            btnBInsuranceConditions.setDisable(false);
         }
         else{
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
+            btnBInsuranceConditions.setDisable(true);
         }
         if(selectedCustomerData[10].equals("Ja")){
             btnDelT.setDisable(false);
             btnNewT.setDisable(true);
+            btnTInsuranceConditions1.setDisable(false);
         }
         else{
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
+            btnTInsuranceConditions1.setDisable(true);
         }
         if(selectedCustomerData[11].equals("Ja")){
             btnDelC.setDisable(false);
             btnNewC.setDisable(true);
+            btnCInsuranceConditions.setDisable(false);
         }
         else{
             btnDelC.setDisable(true);
             btnNewC.setDisable(false);
+            btnCInsuranceConditions.setDisable(true);
         }
 
         //"Oversikt" tab'en
@@ -412,6 +425,7 @@ public class Controller{
         Scene scene = new Scene(nyKundeScene);
         modalBack(primaryStage, scene);
     }
+
     public void btnNyHus(ActionEvent actionEvent) {
 
         Node node = (Node) actionEvent.getSource();
@@ -434,7 +448,7 @@ public class Controller{
         modal.show();
     }
 
-        private void clearTextFields(){
+    private void clearTextFields(){
         lblOCustomer.setText("----------");
         lblOAddress.setText("----------");
         lblOCustomerStart.setText("----------");
