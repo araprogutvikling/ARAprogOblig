@@ -18,13 +18,11 @@ public class NyKundeController {
 
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =
             Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-
     @FXML
     public TextField inputPnr, inputFirstName, inputLastName, inputAdress, inputZipCode, InputArea,
             inputPhone, inputEmail;
-    public CheckBox pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck;
+    public CheckBox pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck, checkArea;
     public Parent loadingScene;
-
 
 
     public void LagNyKundeOnClick(ActionEvent actionEvent){
@@ -46,6 +44,12 @@ public class NyKundeController {
         Node node = (Node) actionEvent.getSource();
         Stage modal = (Stage) node.getScene().getWindow();
         modal.close();
+    }
+
+    public void verifyArea(KeyEvent keyEvent){
+        String tempArea = InputArea.getText();
+        boolean correctArea = checkArea(tempArea);
+        setChecked(correctArea, InputArea, checkArea);
     }
 
     public void verifyFirsName(KeyEvent keyEvent){
@@ -103,7 +107,18 @@ public class NyKundeController {
         }
     }
 
-
+    public boolean checkArea(String s){
+        if (s.length()==0){
+            return false;
+        }
+        char[] chars = s.toCharArray();
+        for (char c : chars) {
+            if(!Character.isLetter(c)){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public boolean checkEmail(String s){
 
@@ -153,7 +168,6 @@ public class NyKundeController {
         }
         catch (NumberFormatException nfe) {
             return false;
-
         }
         return true;
     }
