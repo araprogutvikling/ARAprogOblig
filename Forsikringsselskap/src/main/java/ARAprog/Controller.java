@@ -1,6 +1,5 @@
 package ARAprog;
 
-import ARAprog.Controllers.NyKundeController;
 import ARAprog.ReadFile.ReadCSV;
 import ARAprog.ReadFile.ReadJOBJ;
 import javafx.concurrent.Service;

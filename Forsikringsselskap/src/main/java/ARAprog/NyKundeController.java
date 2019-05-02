@@ -1,4 +1,4 @@
-package ARAprog.Controllers;
+package ARAprog;
 
 import ARAprog.GenerateNew.NewCustomer;
 import javafx.event.ActionEvent;
