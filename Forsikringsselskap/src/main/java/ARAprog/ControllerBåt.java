@@ -59,44 +59,111 @@ public class ControllerBåt {
 
     public void verifyBpremium (KeyEvent keyEvent){
         String tempArea = BInputPremium.getText();
-        boolean correctArea = checkPremium(tempArea);
+        boolean correctArea = checkNumbers(tempArea);
         setChecked(correctArea, BInputPremium, bPremiumCb);
     }
     public void verifyBOwner (KeyEvent keyEvent){
-        String tempArea = bInputOwner.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, bInputOwner, bAmountCb);
+        String tempOwnerPnr = bInputOwner.getText();
+        boolean correctPnr = checkPnr(tempOwnerPnr);
+        setChecked(correctPnr, bInputOwner, bAmountCb);
     }
     public void verifyBAmount (KeyEvent keyEvent){
-        String tempArea = BInputAmount.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, BInputAmount, bOwnerCb);
+        String tempBamount = BInputAmount.getText();
+        boolean correctBAmount = checkNumbers(tempBamount);
+        setChecked(correctBAmount, BInputAmount, bOwnerCb);
     }
     public void verifyBRegNr (KeyEvent keyEvent){
-        String tempArea = inputbRegNr.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, inputbRegNr, bRegNrCb);
+        String tempreg = inputbRegNr.getText();
+        boolean correctReg = CheckReg(tempreg);
+        setChecked(correctReg, inputbRegNr, bRegNrCb);
     }
     public void verifyBLength (KeyEvent keyEvent){
-        String tempArea = inputBLength.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, inputBLength, bTypeCb);
+        String tempLength = inputBLength.getText();
+        boolean correctLength = checkNumbers(tempLength);
+        setChecked(correctLength, inputBLength, bTypeCb);
     }
     public void verifyBModel (KeyEvent keyEvent){
-        String tempArea = inputBModel.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, inputBModel, bLengthCb);
+        String tempModell = inputBModel.getText();
+        boolean correctModell = isAlpha(tempModell);
+        setChecked(correctModell, inputBModel, bLengthCb);
     }
     public void verifyBStrength (KeyEvent keyEvent){
-        String tempArea = inputBStrength.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, inputBStrength, bModelCb);
+        String tempHP = inputBStrength.getText();
+        boolean correctHP = checkNumbers(tempHP);
+        setChecked(correctHP, inputBStrength, bModelCb);
     }
     public void verifyBType (KeyEvent keyEvent){
-        String tempArea = inputBType.getText();
-        boolean correctArea = checkArea(tempArea);
-        setChecked(correctArea, inputBType, bStrengthCb);
+        String tempType = inputBType.getText();
+        boolean correctType = isAlpha(tempType);
+        setChecked(correctType, inputBType, bStrengthCb);
     }
+    public boolean isAlpha(String s) {
+        if (s.length()==0){
+            return false;
+        }
+        if (!Character.isUpperCase(s.charAt(0))){
+            return false;
+        }
+        for (int i = 1; i < s.length(); i++){
+            if (!Character.isLowerCase(s.charAt(i))){
+                return false;
+            }
+        }
+        char[] chars = s.toCharArray();
+        for (char c : chars) {
+            if(!Character.isLetter(c)){
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean CheckReg(String s){
+        if (s.length()==0){
+            return false;
+        }
+        if (s.length()!= 7){
+            return false;
+        }
+        for (int i = 2; i < s.length(); i++){
+            if (!Character.isUpperCase(s.charAt(i))){
+                return false;
+            }
+        }
+        for (int i = 0; i < 2; i++){
+            if (!Character.isDigit(s.charAt(i))){
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean checkPnr(String s) {
+        try{
+            if (s.length()!=11){
+                return false;
+            }
+            long temp = Long.parseLong(s);
+            if (temp <= 0 ){
+                return false;
+            }
+        }
+        catch (NumberFormatException nfe) {
+            return false;
+
+        }
+        return true;
+    }
+    public boolean checkNumbers(String s){
+    if (s.isEmpty()){
+        return false;
+    }
+        try {
+        long premium = Long.parseLong(s);
+    }
+        catch (NumberFormatException nfe){
+        return false;
+    }
+        return true;
+}
 
 
 
