@@ -1,6 +1,6 @@
 package ARAprog;
 
-import ARAprog.GenerateNew.NewCustomer;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,8 +25,6 @@ public class NyKundeController {
 
 
     public void lagNyKundeOnClick(ActionEvent actionEvent){
-        NewCustomer customer = new NewCustomer();
-        customer.saveNewCustumer();
         try{
             Node node = (Node) actionEvent.getSource();
             Stage loadingStage = (Stage) node.getScene().getWindow();

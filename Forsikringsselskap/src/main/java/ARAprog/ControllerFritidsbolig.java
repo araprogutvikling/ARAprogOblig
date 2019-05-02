@@ -13,6 +13,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 public class ControllerFritidsbolig {
+
     @FXML
     public TextField cInputPremium, cInputAddress, inputCType, inputCStandard, inputCSquareM, inputCAmountB,
             inputCMaterial, inputCAmountC;
