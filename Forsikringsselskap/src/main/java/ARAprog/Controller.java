@@ -25,10 +25,7 @@ public class Controller{
 
     @FXML
     public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis,
-            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC;
-
-    public TextField InputPnr, inputAge, inputFirstName, inputLastName, inputAdress,
-            inputZipCode, InputArea, inputPhone, inputEmail;
+            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus;
 
     public ListView ListForClaimsHistory, ScrollList;
 
@@ -41,7 +38,7 @@ public class Controller{
             lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
     @FXML
-    public Parent nyKundeScene, loadingScene;
+    public Parent nyKundeScene, NyHusScene;
 
     @FXML public void initialize(){}
 
@@ -390,49 +387,41 @@ public class Controller{
         }
     }
 
-    public void btnNykunde(ActionEvent actionEvent) {
+    public void btnNykunde(ActionEvent actionEvent){
         Node node = (Node) actionEvent.getSource();
         Stage primaryStage = (Stage) node.getScene().getWindow();
         try {
             this.nyKundeScene = FXMLLoader.load(getClass().getResource("/FXML/NyKunde.fxml"));
-
-        } catch (IOException e) {
-            System.out.println(e.getCause());
         }
-        Scene scene = new Scene(this.nyKundeScene);
-        Stage modal= new Stage();
-        modal.setScene(scene);
-        modal.initOwner(primaryStage);
-        modal.initModality(Modality.APPLICATION_MODAL);
-        modal.showAndWait();
-    }
-
-    public void LagNyKundeOnClick(ActionEvent actionEvent){
-
-        try{
-            Node node = (Node) actionEvent.getSource();
-            Stage loadingStage = (Stage) node.getScene().getWindow();
-            this.loadingScene = FXMLLoader.load(getClass().getResource("../../resources/FXML/Loading.fxml"));
-            Scene scene = new Scene(loadingScene);
-            loadingStage.setScene(scene);
-            /*Customer newCustomer;
-            newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
-                    inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
-                    inputPhone.getText(), inputEmail.getText());
-            */
-            loadingStage.close();
-        } catch (Exception e) {
+        catch (IOException e) {
             e.printStackTrace();
         }
+        Scene scene = new Scene(nyKundeScene);
+        modalBack(primaryStage, scene);
     }
+    public void btnNyHus(ActionEvent actionEvent) {
 
-    public void btnNyKundeLukk(ActionEvent actionEvent){
         Node node = (Node) actionEvent.getSource();
-        Stage modal = (Stage) node.getScene().getWindow();
-        modal.close();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.NyHusScene = FXMLLoader.load(getClass().getResource("FXML/HusOgInnbo.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(NyHusScene);
+        modalBack(primaryStage, scene);
     }
 
-    private void clearTextFields(){
+    public static void modalBack(Stage stage, Scene newScene) {
+        Stage modal = new Stage();
+        modal.setScene(newScene);
+        modal.initOwner(stage);
+        modal.initModality(Modality.APPLICATION_MODAL);
+        modal.show();
+    }
+
+        private void clearTextFields(){
         lblOCustomer.setText("----------");
         lblOAddress.setText("----------");
         lblOCustomerStart.setText("----------");
