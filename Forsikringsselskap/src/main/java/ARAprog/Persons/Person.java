@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public abstract class Person implements Serializable{
 //Datafelt for person
-    private int prsnPnr;
+    private long prsnPnr;
     private String prsnAge;
     private String prsnFirstName;
     private String prsnLastName;
@@ -14,7 +14,7 @@ public abstract class Person implements Serializable{
     private String prsnEMail;
     private String prsnTlfNr;
 //Konstruktør for Person
-    public Person(int prsnPnr, String prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
+    public Person(long prsnPnr, String prsnAge, String prsnFirstName, String prsnLastName, String prsnAdress,
                   String prsnAreaCode, String prsnPostAlarea, String prsnEMail, String prsnTlfNr) {
 
         this.prsnPnr = prsnPnr;
@@ -28,7 +28,7 @@ public abstract class Person implements Serializable{
         this.prsnTlfNr = prsnTlfNr;
     }
 //Gettere for person
-    public int getPrsnPnr() {
+    public long getPrsnPnr() {
         return prsnPnr;
     }
     public String getPrsnAge() {
@@ -57,7 +57,7 @@ public abstract class Person implements Serializable{
     }
 
 //Settere for person
-    public void setPrsnPnr(int prsnPnr) {
+    public void setPrsnPnr(long prsnPnr) {
         this.prsnPnr = prsnPnr;
     }
     public void setPrsnAge(String prsnAge) {

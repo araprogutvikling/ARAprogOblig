@@ -1,5 +1,6 @@
 package ARAprog;
 
+import ARAprog.Controllers.NyKundeController;
 import ARAprog.ReadFile.ReadCSV;
 import ARAprog.ReadFile.ReadJOBJ;
 import javafx.concurrent.Service;
@@ -10,15 +11,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import static ARAprog.SetSelectedCustomer.parseCustomerData;
 
 public class Controller{
@@ -26,17 +23,7 @@ public class Controller{
     ArrayList<String> data = new ArrayList<>();
 
     @FXML
-    public Button btnNyKundeLukk;
     public Button btnNyku;
-    public TextField InputPnr;
-    public TextField inputAge;
-    public TextField inputFirstName;
-    public TextField inputLastName;
-    public TextField inputAdress;
-    public TextField inputZipCode;
-    public TextField InputArea;
-    public TextField inputPhone;
-    public TextField inputEmail;
     public Button btnReadFile;
     public ListView ListForClaimsHistory;
     public ListView ScrollList;
@@ -49,7 +36,7 @@ public class Controller{
             lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
     @FXML
-    public Parent nyKundeScene, loadingScene;
+    public Parent nyKundeScene, NyHusScene;
 
     @FXML public void initialize(){
         //clearTextFields();
@@ -68,7 +55,8 @@ public class Controller{
         btnReadFile.setDisable(true);
         */
 
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file"
+                , "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
         File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
             @Override
             public void show(Window window) {
@@ -128,80 +116,38 @@ public class Controller{
         SetSelectedCustomer selectedCustomer = new SetSelectedCustomer();
         selectedCustomer.setSelectedCustomer(ScrollList.getSelectionModel().getSelectedIndex(), data);
     }
-
     public void btnNykunde(ActionEvent actionEvent) {
         Node node = (Node) actionEvent.getSource();
         Stage primaryStage = (Stage) node.getScene().getWindow();
         try {
             this.nyKundeScene = FXMLLoader.load(getClass().getResource("/FXML/NyKunde.fxml"));
-
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
+        System.exit(0);
         Scene scene = new Scene(nyKundeScene);
         modalBack(primaryStage, scene);
     }
+    public void btnNyHus(ActionEvent actionEvent) {
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.NyHusScene = FXMLLoader.load(getClass().getResource("FXML/HusOgInnbo.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(NyHusScene);
+        modalBack(primaryStage, scene);
+    }
 
-    public void modalBack(Stage stage, Scene newScene){
-
+    public static void modalBack(Stage stage, Scene newScene){
         Stage modal = new Stage();
         modal.setScene(newScene);
         modal.initOwner(stage);
         modal.initModality(Modality.APPLICATION_MODAL);
-        modal.showAndWait();
-    }
-
-
-
-    public int customerNewPnr() throws Exception {
-        int pNr;
-        String customerPnrtemp = InputPnr.getText();
-        if (customerPnrtemp.length() < 10){
-            throw new Exception();
-        }
-        if (customerPnrtemp.length() > 10){
-            throw new Exception();
-        }
-        if (!isANumber(customerPnrtemp)) {
-            throw new Exception();
-        }
-        try {
-            pNr = Integer.parseInt(customerPnrtemp);
-            return pNr;
-        }
-        catch (Exception e){
-            throw new Exception();
-        }
-    }
-
-    public boolean isANumber(String s){
-        String regex="\\d+";
-        return s.matches(regex);//returns true if input and regex matches otherwise false;
-    }
-
-    public void LagNyKundeOnClick(ActionEvent actionEvent){
-
-        try{
-            Node node = (Node) actionEvent.getSource();
-            Stage loadingStage = (Stage) node.getScene().getWindow();
-            this.loadingScene = FXMLLoader.load(getClass().getResource("../../resources/FXML/Loading.fxml"));
-            Scene scene = new Scene(loadingScene);
-            loadingStage.setScene(scene);
-            /*Customer newCustomer;
-            newCustomer = new Customer(Integer.parseInt(InputPnr.getText()), inputAge.getText(), inputFirstName.getText(),
-                    inputLastName.getText(), inputAdress.getText(), inputZipCode.getText(), InputArea.getText(),
-                    inputPhone.getText(), inputEmail.getText());
-            */
-            loadingStage.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void btnNyKundeLukk(ActionEvent actionEvent){
-        Node node = (Node) actionEvent.getSource();
-        Stage modal = (Stage) node.getScene().getWindow();
-        modal.close();
+        modal.show();
     }
 
     private void clearTextFields(){
@@ -247,5 +193,4 @@ public class Controller{
         lblTSumInsurance1.setText("----------");
         ListForClaimsHistory.getItems().clear();
     }
-
 }
