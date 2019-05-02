@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+import static ARAprog.NyKundeController.activateRegisterBTN;
+
 public class ControllerFritidsbolig {
     @FXML
     public TextField cInputPremium, cInputAddress, inputCType, inputCStandard, inputCSquareM, inputCAmountB,
@@ -56,56 +58,56 @@ public class ControllerFritidsbolig {
         String tempCPremium = cInputPremium.getText();
         boolean checkCPremium = checkerCPremium(tempCPremium);
         setChecked(checkCPremium, cInputPremium, cPremiumCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCAddress(KeyEvent keyEvent) {
         String tempCAddress = cInputAddress.getText();
         boolean checkCAddress = checkerCAddress(tempCAddress);
         setChecked(checkCAddress, cInputAddress, cAddressCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCType(KeyEvent keyEvent) {
         String tempCType = inputCType.getText();
         boolean checkCType = isAlpha(tempCType);
         setChecked(checkCType, inputCType, cTypeCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCStandard(KeyEvent keyEvent) {
         String tempCStandard = inputCStandard.getText();
         boolean checkCStandard = isAlpha(tempCStandard);
         setChecked(checkCStandard, inputCStandard, cStandardCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCSquareM(KeyEvent keyEvent) {
         String tempCSquareM = inputCSquareM.getText();
         boolean checkCSquareM = checkerCPremium(tempCSquareM);
         setChecked(checkCSquareM, inputCSquareM, cSquaremeterCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCAmountB(KeyEvent keyEvent) {
         String tempCAmountB = inputCAmountB.getText();
         boolean checkCAmountB = checkerCPremium(tempCAmountB);
         setChecked(checkCAmountB, inputCAmountB, cAmountBCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCMaterial(KeyEvent keyEvent) {
         String tempCMaterial =inputCMaterial.getText();
         boolean checkCMaterial = isAlpha(tempCMaterial);
         setChecked(checkCMaterial, inputCMaterial, cMaterialCb);
-
+        checkBoxSelected();
     }
 
     public void verifyCAmountC(KeyEvent keyEvent) {
         String tempAmountC = inputCAmountC.getText();
         boolean checkCAmountC = checkerCPremium(tempAmountC);
         setChecked(checkCAmountC, inputCAmountC, cAmountICb);
-
+        checkBoxSelected();
     }
 
     public boolean checkerCPremium(String s) {
@@ -153,7 +155,14 @@ public class ControllerFritidsbolig {
 
     }
 
-
+    public void checkBoxSelected(){
+        if (activateRegisterBTN(cPremiumCb, cAddressCb, cTypeCb, cStandardCb, cSquaremeterCb, cAmountBCb, cAmountICb, cMaterialCb)){
+            buttonOpprettNyFritidsB.setDisable(false);
+        }
+        else {
+            buttonOpprettNyFritidsB.setDisable(true);
+        }
+    }
 
 }
 

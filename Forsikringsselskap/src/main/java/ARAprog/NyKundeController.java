@@ -22,6 +22,7 @@ public class NyKundeController {
             inputPhone, inputEmail;
     public CheckBox pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck, checkArea;
     public Parent loadingScene;
+    public Button buttonLagNyKunde;
 
 
     public void lagNyKundeOnClick(ActionEvent actionEvent){
@@ -49,48 +50,56 @@ public class NyKundeController {
         String tempArea = InputArea.getText();
         boolean correctArea = isAlpha(tempArea);
         setChecked(correctArea, InputArea, checkArea);
+        checkBoxSelected();
     }
 
     public void verifyFirsName(KeyEvent keyEvent){
         String tempFirstname = inputFirstName.getText();
         boolean correctFirstName = isAlpha(tempFirstname);
         setChecked(correctFirstName, inputFirstName, firstNameCheck);
+        checkBoxSelected();
     }
 
     public void verifyLastName(KeyEvent keyEvent){
         String tempLastName = inputLastName.getText();
         boolean correctLastName = isAlpha(tempLastName);
         setChecked(correctLastName, inputLastName, checkLastName);
+        checkBoxSelected();
     }
 
     public void verifyAdress (KeyEvent keyEvent){
         String tempAdress = inputAdress.getText();
         boolean correctAdress = checkAdress(tempAdress);
         setChecked(correctAdress, inputAdress, checkAdress);
+        checkBoxSelected();
     }
 
     public void verifyZipcode(){
         String tempZipCode = inputZipCode.getText();
         boolean correctZip = checkZip(tempZipCode);
         setChecked(correctZip, inputZipCode, checkZip);
+        checkBoxSelected();
     }
 
     public void verifyPnr(KeyEvent keyEvent) {
         String tempin = inputPnr.getText();
         boolean corectPnr = checkPnr(tempin);
         setChecked(corectPnr, inputPnr, pNrCheck);
+        checkBoxSelected();
     }
 
     public void verifyTlfNr(KeyEvent keyEvent){
         String tempTlf = inputPhone.getText();
         boolean correctTlf = checkTlf(tempTlf);
         setChecked(correctTlf, inputPhone, tlfCheck);
+        checkBoxSelected();
     }
 
     public void verifyEmail(KeyEvent keyEvent){
         String tempEmail = inputEmail.getText();
         boolean correctEmail = checkEmail(tempEmail);
         setChecked(correctEmail, inputEmail, emailCheck);
+        checkBoxSelected();
     }
 
     public void setChecked(boolean check, TextField t, CheckBox b){
@@ -190,9 +199,26 @@ public class NyKundeController {
         return true;
     }
 
-    private void activateRegisterBTN(CheckBox... checkboxes){
-        for (CheckBox checkBox : checkboxes){
-
+    public void checkBoxSelected(){
+        if (activateRegisterBTN(pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck, checkArea)){
+            buttonLagNyKunde.setDisable(false);
         }
+        else{
+            buttonLagNyKunde.setDisable(true);
+        }
+    }
+
+    static boolean activateRegisterBTN(CheckBox... checkboxes){
+        int x = checkboxes.length;
+        int i = 0;
+        for (CheckBox checkBox : checkboxes){
+            if (checkBox.isSelected()){
+                i++;
+            }
+        }
+        if(x == i){
+            return true;
+        }
+        return false;
     }
 }

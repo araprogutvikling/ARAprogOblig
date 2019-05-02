@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+import static ARAprog.NyKundeController.activateRegisterBTN;
+
 public class ControllerHus {
 
     @FXML
@@ -57,43 +59,51 @@ public class ControllerHus {
         String tempHpremium = hInputPremium.getText();
         boolean checkHpremium = checkerHpremium(tempHpremium);
         setChecked(checkHpremium, hInputPremium, hPremiumCb);
+        checkBoxSelected();
     }
     public void verifyHAddress (KeyEvent keyEvent){
         String tempAddress = hInputAddress.getText();
         boolean checkAddres = checkAddres(tempAddress);
         setChecked(checkAddres, hInputAddress, hAddressCb);
+        checkBoxSelected();
     }
 
     public void verifyHType (KeyEvent keyEvent){
         String tempType = inputHType.getText();
         boolean correctType = isAlpha(tempType);
         setChecked(correctType, inputHType, hTypeCb);
+        checkBoxSelected();
     }
 
     public void verifyHStandard (KeyEvent keyEvent){
         String tempStandar = inputHStandard.getText();
         boolean correctStandard = isAlpha(tempStandar);
         setChecked(correctStandard, inputHStandard, hStandardCb);
+        checkBoxSelected();
     }
     public void verifyHSquareM (KeyEvent keyEvent){
         String tempSquere = inputHSquareM.getText();
         boolean correctSquere = checkAmount(tempSquere);
         setChecked(correctSquere, inputHSquareM, hSquaremeterCb);
+        checkBoxSelected();
     }
     public void verifyHAmountB (KeyEvent keyEvent){
         String tempAmountB = inputHAmountB.getText();
         boolean correctAmountB = checkAmount(tempAmountB);
         setChecked(correctAmountB, inputHAmountB, hAmountBCb);
+        checkBoxSelected();
     }
     public void verifyHMaterial (KeyEvent keyEvent){
         String tempMaterial = inputHMaterial.getText();
         boolean correctMaterial = isAlpha(tempMaterial);
         setChecked(correctMaterial, inputHMaterial, hMaterialCb);
+        checkBoxSelected();
     }
     public void verifyHAmountC (KeyEvent keyEvent){
         String tempAmountC = inputHAmountC.getText();
         boolean correctAmountB = checkAmount(tempAmountC);
         setChecked(correctAmountB, inputHAmountC, hAmountICb);
+        checkBoxSelected();
     }
 
     public boolean checkerHpremium(String s){
@@ -152,5 +162,14 @@ public class ControllerHus {
         return true;
     }
 
+    public void checkBoxSelected(){
+        if (activateRegisterBTN(hPremiumCb, hAddressCb, hTypeCb, hStandardCb, hSquaremeterCb, hAmountBCb, hMaterialCb,
+                hAmountICb)){
+            buttonOpprettNyHus.setDisable(false);
+        }
+        else {
+            buttonOpprettNyHus.setDisable(true);
+        }
+    }
 
 }

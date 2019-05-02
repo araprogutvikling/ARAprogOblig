@@ -12,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
+import static ARAprog.NyKundeController.activateRegisterBTN;
+
 public class ControllerReise {
 
 
@@ -59,26 +61,26 @@ public class ControllerReise {
     String tempTPremium = tInputPremium.getText();
     boolean checkTPremium = checkerTPremium (tempTPremium);
     setChecked(checkTPremium, tInputPremium, tPremiumCb);
-
+        checkBoxSelected();
     }
 
     public void verifyTArea(KeyEvent keyEvent) {
         String tempTArea = tInputArea.getText();
         boolean checkTArea = isAlpha (tempTArea);
         setChecked(checkTArea, tInputArea, tAreaCb);
-
+        checkBoxSelected();
     }
     public void verifyTAmount(KeyEvent keyEvent) {
         String tempTAmount = tInputAmount.getText();
         boolean checkTAmount = checkerTPremium (tempTAmount);
         setChecked(checkTAmount, tInputAmount, tAmountCb);
-
+        checkBoxSelected();
     }
     public void verifyTSum(KeyEvent keyEvent) {
         String tempTSum = inputTSum.getText();
         boolean checkTSum = checkerTPremium (tempTSum);
         setChecked(checkTSum, inputTSum, tSumCb);
-
+        checkBoxSelected();
     }
 
     public boolean checkerTPremium(String s) {
@@ -115,6 +117,14 @@ public class ControllerReise {
 
     }
 
+    public void checkBoxSelected(){
+        if (activateRegisterBTN(tPremiumCb, tAreaCb, tAmountCb, tSumCb)){
+            buttonOpprettNyReise.setDisable(false);
+        }
+        else {
+            buttonOpprettNyReise.setDisable(true);
+        }
+    }
 }
 
 
