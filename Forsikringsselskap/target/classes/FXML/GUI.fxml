@@ -104,7 +104,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnNewH" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
+                        <Button fx:id="btnNewH" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNyHus" text="Opprett ny forsikring" />
                         <Button fx:id="btnDelH" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
@@ -224,7 +224,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnNewBoat" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
+                        <Button fx:id="btnNewBoat" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNewBoat" text="Opprett ny forsikring" />
                         <Button fx:id="btnDelBoat" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="87.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringen ble opprettet:">
                            <font>
@@ -334,7 +334,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnNewT" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
+                        <Button fx:id="btnNewT" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNewT" text="Opprett ny forsikring" />
                         <Button fx:id="btnDelT" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
@@ -404,7 +404,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnNewC" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" text="Opprett ny forsikring" />
+                        <Button fx:id="btnNewC" layoutX="26.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNewC" text="Opprett ny forsikring" />
                         <Button fx:id="btnDelC" disable="true" layoutX="250.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Label layoutX="18.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsnummer:">
                            <font>
@@ -525,7 +525,7 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Button fx:id="btnDelHis" disable="true" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
-                        <Button layoutX="155.0" layoutY="450.0" mnemonicParsing="false" text="Ny skademelding" />
+                        <Button fx:id="btnNySkademelding" layoutX="155.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnNySkademelding" text="Ny skademelding" />
                         <ListView fx:id="ListForClaimsHistory" layoutX="25.0" layoutY="17.0" onMouseClicked="#getSelectedSkademelding" prefHeight="406.0" prefWidth="759.0" />
                      </children></AnchorPane>
                </content>
