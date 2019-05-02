@@ -56,7 +56,9 @@ public class PopupTermsData {
                     "For nærmere beløpsgrenser se den enkelte kundes kontrakt. \n";
         }
         else {
-            ///TODO: Lage errormelding
+
+
+            System.err.println("Kunne ikke finne forsikringsbetingelser");
 
             return null;
 
