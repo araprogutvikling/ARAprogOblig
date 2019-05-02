@@ -427,11 +427,10 @@ public class Controller{
     }
 
     public void btnNyHus(ActionEvent actionEvent) {
-
         Node node = (Node) actionEvent.getSource();
         Stage primaryStage = (Stage) node.getScene().getWindow();
         try {
-            this.NyHusScene = FXMLLoader.load(getClass().getResource("FXML/HusOgInnbo.fxml"));
+            this.NyHusScene = FXMLLoader.load(getClass().getResource("/FXML/Husoginnbo.fxml"));
         }
         catch (IOException e) {
             e.printStackTrace();
