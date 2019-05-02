@@ -10,7 +10,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.stage.*;
 
 import java.io.File;
@@ -24,8 +27,9 @@ public class Controller{
     ArrayList<String> data = new ArrayList<>();
 
     @FXML
-    public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis,
-            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus;
+    public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis, btnHInsuranceConditions,
+            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus,
+            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions, btnNySkademelding;
 
     public ListView ListForClaimsHistory, ScrollList;
 
@@ -38,7 +42,7 @@ public class Controller{
             lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
     @FXML
-    public Parent nyKundeScene, NyHusScene;
+    public Parent nyKundeScene, NyHusScene, nyBåtScene, nyReiseScene, nyFritidsboligScene, nySkadeScene;
 
     @FXML public void initialize(){}
 
@@ -205,6 +209,7 @@ public class Controller{
 
             btnDelH.setDisable(true);
             btnNewH.setDisable(false);
+            btnHInsuranceConditions.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelBoat)){
@@ -225,6 +230,7 @@ public class Controller{
 
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
+            btnBInsuranceConditions.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelT)){
@@ -241,14 +247,23 @@ public class Controller{
 
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
+            btnTInsuranceConditions1.setDisable(true);
             data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelHis)){
             int selectedClaimsHistory = ListForClaimsHistory.getSelectionModel().getSelectedIndex();
+            ListForClaimsHistory.getItems().clear();
 
+            if(selectedClaimsHistory >= 0){
+                selectedCustomerData = deleteListData(selectedCustomerData, selectedClaimsHistory);
+            }
+            data.set(selectedCustomer, unParseData(selectedCustomerData));
+            for (int i = 57; i < selectedCustomerData.length; i++){
+                ListForClaimsHistory.getItems().add(selectedCustomerData[i]);
+            }
+            btnDelHis.setDisable(true);
+            btnCInsuranceConditions.setDisable(true);
         }
-
-
 
         if(actionEvent.getSource().equals(btnDelCustomer)){
             data.remove(selectedCustomer);
@@ -264,18 +279,21 @@ public class Controller{
         }
     }
 
-    private String[] deleteData(String[] oldArray, int x){
-        ArrayList<String> newArray = new ArrayList();
-        String[] shorterArray = new String[oldArray.length-1];
-        int removeThis = 57 + x;
+    private String[] deleteListData(String[] oldArray, int selectedClaim){
+        String[] newArray = new String[oldArray.length-1];
+        int x = 0;
 
-        newArray.addAll(Arrays.asList(oldArray));
-        newArray.remove(removeThis);
+        for(int i = 0; i < newArray.length; i++){
+            if(i == (57+selectedClaim)){
+                x++;
+            }
 
-        for(String text : newArray){
-            //TODO:lag noe her
+                newArray[i] = oldArray[x];
+                x++;
+
+
         }
-        return null;
+        return newArray;
     }
 
     private void clearLabel(Label label){
@@ -296,34 +314,42 @@ public class Controller{
         if (selectedCustomerData[8].equals("Ja")){
             btnDelH.setDisable(false);
             btnNewH.setDisable(true);
+            btnHInsuranceConditions.setDisable(false);
         }
         else{
             btnDelH.setDisable(true);
             btnNewH.setDisable(false);
+            btnHInsuranceConditions.setDisable(true);
         }
         if(selectedCustomerData[9].equals("Ja")){
             btnDelBoat.setDisable(false);
             btnNewBoat.setDisable(true);
+            btnBInsuranceConditions.setDisable(false);
         }
         else{
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
+            btnBInsuranceConditions.setDisable(true);
         }
         if(selectedCustomerData[10].equals("Ja")){
             btnDelT.setDisable(false);
             btnNewT.setDisable(true);
+            btnTInsuranceConditions1.setDisable(false);
         }
         else{
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
+            btnTInsuranceConditions1.setDisable(true);
         }
         if(selectedCustomerData[11].equals("Ja")){
             btnDelC.setDisable(false);
             btnNewC.setDisable(true);
+            btnCInsuranceConditions.setDisable(false);
         }
         else{
             btnDelC.setDisable(true);
             btnNewC.setDisable(false);
+            btnCInsuranceConditions.setDisable(true);
         }
 
         //"Oversikt" tab'en
@@ -399,6 +425,7 @@ public class Controller{
         Scene scene = new Scene(nyKundeScene);
         modalBack(primaryStage, scene);
     }
+
     public void btnNyHus(ActionEvent actionEvent) {
         Node node = (Node) actionEvent.getSource();
         Stage primaryStage = (Stage) node.getScene().getWindow();
@@ -412,6 +439,58 @@ public class Controller{
         modalBack(primaryStage, scene);
     }
 
+    public void btnNewBoat(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyBåtScene = FXMLLoader.load(getClass().getResource("/FXML/Båt.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyBåtScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNewT(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyReiseScene = FXMLLoader.load(getClass().getResource("/FXML/Reise.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyReiseScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNewC(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyFritidsboligScene = FXMLLoader.load(getClass().getResource("/FXML/Fritidsbolig.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyFritidsboligScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNySkademelding(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nySkadeScene = FXMLLoader.load(getClass().getResource("/FXML/Skademelding.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nySkadeScene);
+        modalBack(primaryStage, scene);
+    }
+
     public static void modalBack(Stage stage, Scene newScene) {
         Stage modal = new Stage();
         modal.setScene(newScene);
@@ -420,7 +499,7 @@ public class Controller{
         modal.show();
     }
 
-        private void clearTextFields(){
+    private void clearTextFields(){
         lblOCustomer.setText("----------");
         lblOAddress.setText("----------");
         lblOCustomerStart.setText("----------");
