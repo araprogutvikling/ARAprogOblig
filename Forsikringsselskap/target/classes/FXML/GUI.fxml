@@ -520,7 +520,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="btnDelHis" disable="true" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" text="Slett" />
+                        <Button fx:id="btnDelHis" disable="true" layoutX="94.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" text="Slett" />
                         <Button layoutX="155.0" layoutY="450.0" mnemonicParsing="false" text="Ny skademelding" />
                         <ListView fx:id="ListForClaimsHistory" layoutX="25.0" layoutY="17.0" onMouseClicked="#getSelectedSkademelding" prefHeight="406.0" prefWidth="759.0" />
                      </children></AnchorPane>

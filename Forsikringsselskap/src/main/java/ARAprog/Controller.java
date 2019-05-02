@@ -10,7 +10,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.stage.*;
 
 import java.io.File;
@@ -245,10 +248,17 @@ public class Controller{
         }
         else if(actionEvent.getSource().equals(btnDelHis)){
             int selectedClaimsHistory = ListForClaimsHistory.getSelectionModel().getSelectedIndex();
+            ListForClaimsHistory.getItems().clear();
 
+            if(selectedClaimsHistory >= 0){
+                selectedCustomerData = deleteListData(selectedCustomerData, selectedClaimsHistory);
+            }
+            data.set(selectedCustomer, unParseData(selectedCustomerData));
+            for (int i = 57; i < selectedCustomerData.length; i++){
+                ListForClaimsHistory.getItems().add(selectedCustomerData[i]);
+            }
+            btnDelHis.setDisable(true);
         }
-
-
 
         if(actionEvent.getSource().equals(btnDelCustomer)){
             data.remove(selectedCustomer);
@@ -264,18 +274,21 @@ public class Controller{
         }
     }
 
-    private String[] deleteData(String[] oldArray, int x){
-        ArrayList<String> newArray = new ArrayList();
-        String[] shorterArray = new String[oldArray.length-1];
-        int removeThis = 57 + x;
+    private String[] deleteListData(String[] oldArray, int selectedClaim){
+        String[] newArray = new String[oldArray.length-1];
+        int x = 0;
 
-        newArray.addAll(Arrays.asList(oldArray));
-        newArray.remove(removeThis);
+        for(int i = 0; i < newArray.length; i++){
+            if(i == (57+selectedClaim)){
+                x++;
+            }
 
-        for(String text : newArray){
-            //TODO:lag noe her
+                newArray[i] = oldArray[x];
+                x++;
+
+
         }
-        return null;
+        return newArray;
     }
 
     private void clearLabel(Label label){
