@@ -164,7 +164,6 @@ public class ControllerFritidsbolig {
             buttonOpprettNyFritidsB.setDisable(true);
         }
     }
-
 }
 
 

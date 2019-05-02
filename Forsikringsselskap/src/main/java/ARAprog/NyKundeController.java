@@ -188,5 +188,18 @@ public class NyKundeController {
         return true;
     }
 
+    public static boolean activateRegisterBTN(CheckBox... checkBoxes) {
+        int x = checkBoxes.length;
+        int i = 0;
+        for(CheckBox checkBox : checkBoxes){
+            if(checkBox.isSelected()){
+                i++;
+            }
+        }
+        if (x == i){
+            return true;
+        }
+        return false;
+    }
 
 }
