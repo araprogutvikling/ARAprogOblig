@@ -10,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
