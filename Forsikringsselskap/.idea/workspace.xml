@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,33 +20,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="165" selection-start-line="11" selection-start-column="158" selection-end-line="11" selection-end-column="165" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+            <state relative-caret-position="250">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -55,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="141" column="8" lean-forward="true" selection-start-line="141" selection-start-column="8" selection-end-line="154" selection-end-column="20" />
+            <state relative-caret-position="352">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,23 +45,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-3128">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="99" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="99" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="92" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="92" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -134,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java" />
       </list>
     </option>
   </component>
@@ -246,6 +217,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ARAprog" type="462c0819:PsiDirectoryNode" />
               <item name="Persons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forsikringsselskap" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ARAprog" type="462c0819:PsiDirectoryNode" />
+              <item name="Policies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
@@ -469,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556805815447</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556810946511</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556810946511</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103563000" />
+    <option name="totallyTimeSpent" value="104933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,7 +475,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.48087433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16174497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -497,7 +484,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.29461756" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -646,17 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Claims.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setDescriptionOfIncident#0;class#Claims#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -744,16 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="141" column="8" lean-forward="true" selection-start-line="141" selection-start-column="8" selection-end-line="154" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -764,8 +730,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Claims.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setDescriptionOfIncident#0;class#Claims#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="99" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="99" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

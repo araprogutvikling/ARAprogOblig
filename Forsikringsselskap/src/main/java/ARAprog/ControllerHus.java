@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 public class ControllerHus {
 
     @FXML
-    public TextField hInputPremium, hInputAddress, hInputAmount, inputHType, inputHStandard, inputHSquareM,
+    public TextField hInputPremium, hInputAddress, inputHType, inputHStandard, inputHSquareM,
             inputHAmountB, inputHMaterial, inputHAmountC;
     public CheckBox hPremiumCb, hAddressCb, hTypeCb, hStandardCb, hSquaremeterCb, hAmountBCb, hMaterialCb,
     hAmountICb;
