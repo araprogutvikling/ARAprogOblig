@@ -202,5 +202,9 @@ public class NyKundeController {
         return true;
     }
 
+    private void activateRegisterBTN(CheckBox... checkboxes){
+        for (CheckBox checkBox : checkboxes){
 
+        }
+    }
 }
