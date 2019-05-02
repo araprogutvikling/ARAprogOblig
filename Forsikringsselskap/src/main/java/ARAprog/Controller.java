@@ -29,7 +29,7 @@ public class Controller{
     @FXML
     public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis, btnHInsuranceConditions,
             btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus,
-            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions;
+            btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions, btnNySkademelding;
 
     public ListView ListForClaimsHistory, ScrollList;
 
@@ -42,7 +42,7 @@ public class Controller{
             lblCStandard1, lblCSquaremeter1, lblCInsuranceVB1, lblCInsuranceVC1, lblCDateForInsurance1, lblCAmountInsurance1;
 
     @FXML
-    public Parent nyKundeScene, NyHusScene;
+    public Parent nyKundeScene, NyHusScene, nyBåtScene, nyReiseScene, nyFritidsboligScene, nySkadeScene;
 
     @FXML public void initialize(){}
 
@@ -436,6 +436,58 @@ public class Controller{
             e.printStackTrace();
         }
         Scene scene = new Scene(NyHusScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNewBoat(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyBåtScene = FXMLLoader.load(getClass().getResource("/FXML/Båt.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyBåtScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNewT(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyReiseScene = FXMLLoader.load(getClass().getResource("/FXML/Reise.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyReiseScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNewC(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nyFritidsboligScene = FXMLLoader.load(getClass().getResource("/FXML/Fritidsbolig.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nyFritidsboligScene);
+        modalBack(primaryStage, scene);
+    }
+
+    public void btnNySkademelding(ActionEvent actionEvent){
+        Node node = (Node) actionEvent.getSource();
+        Stage primaryStage = (Stage) node.getScene().getWindow();
+        try {
+            this.nySkadeScene = FXMLLoader.load(getClass().getResource("/FXML/Skademelding.fxml"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(nySkadeScene);
         modalBack(primaryStage, scene);
     }
 
