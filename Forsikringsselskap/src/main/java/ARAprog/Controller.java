@@ -1,7 +1,7 @@
 package ARAprog;
 
 import ARAprog.ReadFile.ReadCSV;
-import ARAprog.ReadFile.ReadJOBJ;
+import ARAprog.WriteFile.WriteCSV;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.*;
 
 import java.io.File;
@@ -23,12 +20,12 @@ import java.util.Arrays;
 
 public class Controller{
     Service<Void> dataLoaderThread;
+    Service<Void> dataSaverThread;
     ArrayList<String> data = new ArrayList<>();
 
     @FXML
-    public Button btnNyku, btnDelCustomer, btnChangeO, btnReadFile, btnChangeH,
-            btnDelH, btnChangeBoat, btnDelBoat, btnChangeT, btnDelT, btnChangeC,
-            btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC;
+    public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis,
+            btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC;
 
     public TextField InputPnr, inputAge, inputFirstName, inputLastName, inputAdress,
             inputZipCode, InputArea, inputPhone, inputEmail;
@@ -48,6 +45,59 @@ public class Controller{
 
     @FXML public void initialize(){}
 
+    public void saveFile(){
+        FileChooser fileSave = new FileChooser();
+        fileSave.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"));
+        String fileType = null;
+
+        File savedFile = fileSave.showSaveDialog(new PopupWindow() {
+            @Override
+            public void show(Window owner) {
+                super.show(owner);
+            }
+        });
+
+        fileType = fileSave.getSelectedExtensionFilter().getDescription();
+
+        String finalFileType = fileType;
+        dataSaverThread = new Service<Void>() {
+            @Override
+            protected Task<Void> createTask() {
+                return new Task<Void>() {
+                    @Override
+                    protected Void call() throws Exception {
+
+                        if (finalFileType.equals("Excel csv-file")) {
+                            WriteCSV write = new WriteCSV(data, savedFile);
+
+                        } /*else if (finalFileType.equals("Java object")) {
+                            WriteJOBJ write = new WriteJOBJ(data ,savedFile);
+                            //TODO: Make this writer work
+
+                        }*/ else {
+                            //TODO: Make a better error
+                            System.err.println("No file selected, or save window exited");
+
+                        }
+
+                        return null;
+                    }
+                };
+            }
+        };
+
+        dataSaverThread.setOnSucceeded(event -> {Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Success!");
+            alert.setHeaderText(null);
+            alert.setContentText("The file has been saved!");
+
+            alert.showAndWait();
+        });
+
+        dataSaverThread.start();
+
+    }
+
     public void readFile(){
         FileChooser fileChooser = new FileChooser();
         ScrollList.getItems().clear();
@@ -56,12 +106,8 @@ public class Controller{
         String fileType = null;
         ListForClaimsHistory.getItems().clear();
 
-        /*
-        TODO: Make the disable thing work
-        btnReadFile.setDisable(true);
-        */
 
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"), new FileChooser.ExtensionFilter("Java object", "*.jobj"));
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Excel csv-file", "*.csv"));
         File selectedFile = fileChooser.showOpenDialog(new PopupWindow() {
             @Override
             public void show(Window window) {
@@ -85,17 +131,17 @@ public class Controller{
 
                         Thread.sleep(2000);
 
-                        if (finalFileType == "Excel csv-file") {
+                        if (finalFileType.equals("Excel csv-file")) {
                             ReadCSV read = new ReadCSV(selectedFile);
                             data.addAll(read.getFileData());
 
-                        } else if (finalFileType == "Java object") {
+                        }/* else if (finalFileType.equals("Java object")) {
                             ReadJOBJ read = new ReadJOBJ(selectedFile);
                             //TODO: Make this reader work
 
-                        } else {
+                        }*/ else {
                             //TODO: Make a better error
-                            System.err.println("Wrong filetype!");
+                            System.err.println("Load window exited");
 
                         }
 
@@ -132,6 +178,11 @@ public class Controller{
 
         return newText;
     }
+
+    public void getSelectedSkademelding(){
+        btnDelHis.setDisable(false);
+    }
+
     public void deleteData(ActionEvent actionEvent){
         //TODO: Make proper error checks
         int selectedCustomer = ScrollList.getSelectionModel().getSelectedIndex();
@@ -156,9 +207,8 @@ public class Controller{
             Arrays.fill(selectedCustomerData, 12, 25, "----------");
 
             btnDelH.setDisable(true);
-            btnChangeH.setDisable(true);
             btnNewH.setDisable(false);
-            data.add(selectedCustomer, unParseData(selectedCustomerData));
+            data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelBoat)){
             clearLabel(lblBInsuranceNr1);
@@ -176,10 +226,9 @@ public class Controller{
 
             Arrays.fill(selectedCustomerData, 25, 36, "----------");
 
-            btnChangeBoat.setDisable(true);
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
-            data.add(selectedCustomer, unParseData(selectedCustomerData));
+            data.set(selectedCustomer, unParseData(selectedCustomerData));
         }
         else if(actionEvent.getSource().equals(btnDelT)){
             clearLabel(lblTInsuranceNr1);
@@ -193,10 +242,13 @@ public class Controller{
 
             Arrays.fill(selectedCustomerData, 36, 46, "----------");
 
-            btnChangeT.setDisable(true);
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
-            data.add(selectedCustomer, unParseData(selectedCustomerData));
+            data.set(selectedCustomer, unParseData(selectedCustomerData));
+        }
+        else if(actionEvent.getSource().equals(btnDelHis)){
+            int selectedClaimsHistory = ListForClaimsHistory.getSelectionModel().getSelectedIndex();
+
         }
 
 
@@ -212,8 +264,21 @@ public class Controller{
                 }
             }
             btnDelCustomer.setDisable(true);
-            btnChangeO.setDisable(true);
         }
+    }
+
+    private String[] deleteData(String[] oldArray, int x){
+        ArrayList<String> newArray = new ArrayList();
+        String[] shorterArray = new String[oldArray.length-1];
+        int removeThis = 57 + x;
+
+        newArray.addAll(Arrays.asList(oldArray));
+        newArray.remove(removeThis);
+
+        for(String text : newArray){
+            //TODO:lag noe her
+        }
+        return null;
     }
 
     private void clearLabel(Label label){
@@ -221,9 +286,8 @@ public class Controller{
     }
 
     private static String[] parseCustomerData(String data){
-        String[] customerDataList = data.split(";");
         //TODO: Add exception checks with error messages
-        return customerDataList;
+        return data.split(";");
     }
 
     public void getSelectedCustomer(){
@@ -231,45 +295,36 @@ public class Controller{
         String[] selectedCustomerData = parseCustomerData(data.get(selectedCustomer));
 
         btnDelCustomer.setDisable(false);
-        btnChangeO.setDisable(false);
 
         if (selectedCustomerData[8].equals("Ja")){
             btnDelH.setDisable(false);
-            btnChangeH.setDisable(false);
             btnNewH.setDisable(true);
         }
         else{
             btnDelH.setDisable(true);
-            btnChangeH.setDisable(true);
             btnNewH.setDisable(false);
         }
         if(selectedCustomerData[9].equals("Ja")){
-            btnChangeBoat.setDisable(false);
             btnDelBoat.setDisable(false);
             btnNewBoat.setDisable(true);
         }
         else{
-            btnChangeBoat.setDisable(true);
             btnDelBoat.setDisable(true);
             btnNewBoat.setDisable(false);
         }
         if(selectedCustomerData[10].equals("Ja")){
-            btnChangeT.setDisable(false);
             btnDelT.setDisable(false);
             btnNewT.setDisable(true);
         }
         else{
-            btnChangeT.setDisable(true);
             btnDelT.setDisable(true);
             btnNewT.setDisable(false);
         }
         if(selectedCustomerData[11].equals("Ja")){
-            btnChangeC.setDisable(false);
             btnDelC.setDisable(false);
             btnNewC.setDisable(true);
         }
         else{
-            btnChangeC.setDisable(true);
             btnDelC.setDisable(true);
             btnNewC.setDisable(false);
         }

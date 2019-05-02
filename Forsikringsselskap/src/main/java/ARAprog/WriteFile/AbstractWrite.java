@@ -1,25 +1,30 @@
 package ARAprog.WriteFile;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
-abstract class AbstractWrite {
+abstract class AbstractWrite{
 
-    protected static void writeCSV(ArrayList<String> dataOut, File path) throws IOException {
-        String newString;
-        FileWriter fw = new FileWriter(path.getAbsoluteFile());
+    static void writeCSV(ArrayList<String> dataOut, File path) throws IOException {
+        PrintWriter writer;
+        writer = new PrintWriter(path);
+        //writer.println(dataOut);
+        for(String text : dataOut){
+            writer.println(text);
+        }
+        writer.close();
 
-        for (String string : dataOut){
-            if (string.contains(";")){
-                newString = string + "\n";
-                fw.write(newString);
-            }
+    }
+
+    static void writeJOBJ(ArrayList<Object> dataOut, File path) throws IOException{
+        FileOutputStream fileOutputStream = new FileOutputStream(path);
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+
+        for(Object object : dataOut){
+            objectOutputStream.writeObject(object);
         }
 
-        fw.flush();
-        fw.close();
+        objectOutputStream.close();
 
     }
 
