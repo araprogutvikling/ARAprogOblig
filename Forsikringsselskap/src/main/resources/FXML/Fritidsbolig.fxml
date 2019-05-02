@@ -10,16 +10,14 @@
       <Button fx:id="buttonOpprettNyFritidsB" layoutX="379.0" layoutY="345.0" mnemonicParsing="false" onAction="#OpprettNyFritidsB" text="Opprett ny forsikring" />
       <TextField fx:id="cInputPremium" layoutX="58.0" layoutY="47.0" onKeyReleased="#verifyCpremium" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringspremie" />
       <TextField fx:id="cInputAddress" layoutX="58.0" layoutY="92.0" onKeyReleased="#verifyCAddress" prefHeight="31.0" prefWidth="231.0" promptText="Boligens adresse" />
-      <TextField fx:id="cInputAmount" layoutX="318.0" layoutY="47.0" onKeyReleased="#verifyCAmount" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp" />
       <TextField fx:id="inputCType" layoutX="318.0" layoutY="92.0" onKeyReleased="#verifyCType" prefHeight="31.0" prefWidth="231.0" promptText="Boligtype" />
       <TextField fx:id="inputCStandard" layoutX="318.0" layoutY="138.0" onKeyReleased="#verifyCStandard" prefHeight="31.0" prefWidth="231.0" promptText="Standard" />
-      <TextField fx:id="inputCSquareM" layoutX="58.0" layoutY="185.0" onKeyReleased="#verifyHSquareM" prefHeight="31.0" prefWidth="231.0" promptText="Antall kvadratmeter" />
-      <TextField fx:id="inputCAmountB" layoutX="318.0" layoutY="185.0" onKeyReleased="#verifyHAmountB" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp for bygning" />
+      <TextField fx:id="inputCSquareM" layoutX="58.0" layoutY="185.0" onKeyReleased="#verifyCSquareM" prefHeight="31.0" prefWidth="231.0" promptText="Antall kvadratmeter" />
+      <TextField fx:id="inputCAmountB" layoutX="318.0" layoutY="185.0" onKeyReleased="#verifyCAmountB" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp for bygning" />
       <TextField fx:id="inputCMaterial" layoutX="58.0" layoutY="138.0" onKeyReleased="#verifyCMaterial" prefHeight="31.0" prefWidth="231.0" promptText="Byggemateriale" />
       <TextField fx:id="inputCAmountC" layoutX="58.0" layoutY="229.0" onKeyReleased="#verifyCAmountC" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp innbo" />
       <Button fx:id="buttonLukkOpprettNyFritidsB" layoutX="133.0" layoutY="345.0" mnemonicParsing="false" onAction="#lukkOpprettNyFritidsB" text="Lukk " />
       <CheckBox fx:id="cPremiumCb" disable="true" layoutX="291.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
-      <CheckBox fx:id="cAmountCb" disable="true" layoutX="552.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="cAddressCb" disable="true" layoutX="291.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="cTypeCb" disable="true" layoutX="552.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
       <CheckBox fx:id="cMaterialCb" disable="true" layoutX="291.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
