@@ -4,8 +4,8 @@ public class Customer extends Person {
     //Datafelt for Customer
     private int Customernr;
     private int randomTall;
-    final int maxGrense = 999999; /*konstant (final)*/
-    final int minGrense = 100000; /*konstant (final)*/
+    final int maxGrense = 999_999; /*konstant (final)*/
+    final int minGrense = 100_000; /*konstant (final)*/
     int[] array;
 
     //Konstruktør for Customer
@@ -20,12 +20,12 @@ public class Customer extends Person {
             return Customernr;
     }
 
-    //Setter for Customer
+    //Setter for Customer, starter metoden generateCNr for å genere et unikt kundenr.
     public void setCustomernr() {
         this.Customernr = generateCNr();
     }
-
-    private boolean AlreadyACNr(int newCNr) {
+    //Sjekker om et Customernr er unikt, eller allerede eksistierer!
+    private boolean alreadyACNr(int newCNr) {
         for (int i = 0; i < array.length; i++) {
             if (newCNr == array[i]) {
                 return true;
@@ -33,11 +33,12 @@ public class Customer extends Person {
         }
         return false;
     }
-
+    //Genererer et tilfelig tall, sender det gjennom checkeren over og dersom det er unikt, retunerer det i arrayet.
+    // Deretter blir det sendt inn i setCustomernr
     public int generateCNr() {
         randomTall = minGrense + (int) (Math.random() * ((maxGrense -
                 minGrense) + 1));
-        if (!AlreadyACNr(randomTall)) {
+        if (!alreadyACNr(randomTall)) {
             return randomTall;
         }
         for (int i = 0; i < array.length; i++) {
@@ -45,7 +46,7 @@ public class Customer extends Person {
                 randomTall = minGrense + (int) (Math.random() * ((maxGrense
                         - minGrense) + 1));
             }
-            while (AlreadyACNr(randomTall));
+            while (alreadyACNr(randomTall));
             array[i] = randomTall;
             return randomTall;
         }
