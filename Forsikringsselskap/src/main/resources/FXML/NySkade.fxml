@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.ControllerSkade">
+   <children>
+      <TextField fx:id="DatoForSkade" layoutX="31.0" layoutY="31.0" onKeyReleased="#checkDato" prefHeight="31.0" prefWidth="252.0" promptText="Dato for skade (DDMMÅÅ)" />
+      <TextField fx:id="TypeSkade" layoutX="310.0" layoutY="31.0" onKeyReleased="#checkType" prefHeight="31.0" prefWidth="252.0" promptText="Type skade" />
+      <TextField fx:id="Beskrivelse" alignment="TOP_CENTER" layoutX="31.0" layoutY="87.0" onKeyReleased="#checkBeskrivelse" prefHeight="162.0" prefWidth="534.0" promptText="Beskrivelse av hendelsen" />
+      <TextField fx:id="VitneNavn" layoutX="31.0" layoutY="262.0" onKeyReleased="#checkVitneNavn" prefHeight="31.0" prefWidth="252.0" promptText="Fult navn på vitne" />
+      <TextField fx:id="VitneTlf" layoutX="310.0" layoutY="262.0" onKeyReleased="#checkTlf" prefHeight="31.0" prefWidth="252.0" promptText="Vitne tlfnr." />
+      <TextField fx:id="estimert" layoutX="31.0" layoutY="307.0" onKeyReleased="#checkSkadeVerdi" prefHeight="31.0" prefWidth="252.0" promptText="Estimert verdi skadet" />
+      <Button fx:id="lukkSkademelding" layoutX="132.0" layoutY="353.0" mnemonicParsing="false" onAction="#lukk" text="Lukk" />
+      <Button fx:id="lagreSkade" layoutX="408.0" layoutY="353.0" mnemonicParsing="false" onAction="#saveSkade" text="Lagre" />
+      <TextField fx:id="utbetalt" layoutX="310.0" layoutY="307.0" onKeyReleased="#checkUtbetalt" prefHeight="31.0" prefWidth="252.0" promptText="Utbetalt beløp" />
+      <CheckBox fx:id="CheckbDato" disable="true" layoutX="283.0" layoutY="36.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckbType" disable="true" layoutX="562.0" layoutY="36.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkBBeskrivelse" disable="true" layoutX="565.0" layoutY="158.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckbNavn" disable="true" layoutX="283.0" layoutY="267.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckbUtbetalt" disable="true" layoutX="562.0" layoutY="267.0" mnemonicParsing="false" />
+      <CheckBox fx:id="CheckbEstimert" disable="true" layoutX="283.0" layoutY="312.0" mnemonicParsing="false" />
+      <CheckBox fx:id="Checkb" disable="true" layoutX="562.0" layoutY="312.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.stage.*;
 
 import java.io.File;
@@ -186,20 +183,52 @@ public class Controller{
 
     public void showTerms(ActionEvent actionEvent){
         if (actionEvent.getSource().equals(btnHInsuranceConditions)){
-
             Node node = (Node) actionEvent.getSource();
             Stage primaryStage = (Stage) node.getScene().getWindow();
             try {
-                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTerms.fxml"));
+                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTermsH.fxml"));
             }
             catch (IOException e) {
                 e.printStackTrace();
             }
             Scene scene = new Scene(PopupTermsScene);
             modalBack(primaryStage, scene);
-            String text = PopupTermsData.popupTermsData("btnHInsuranceConditions");
-            lblPopup.setText(text);
-
+        }
+        if(actionEvent.getSource().equals(btnBInsuranceConditions)){
+            Node node = (Node) actionEvent.getSource();
+            Stage primaryStage = (Stage) node.getScene().getWindow();
+            try {
+                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTermsB.fxml"));
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene scene = new Scene(PopupTermsScene);
+            modalBack(primaryStage, scene);
+        }
+        if(actionEvent.getSource().equals(btnCInsuranceConditions)){
+            Node node = (Node) actionEvent.getSource();
+            Stage primaryStage = (Stage) node.getScene().getWindow();
+            try {
+                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTermsF.fxml"));
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene scene = new Scene(PopupTermsScene);
+            modalBack(primaryStage, scene);
+        }
+        if(actionEvent.getSource().equals(btnTInsuranceConditions1)){
+            Node node = (Node) actionEvent.getSource();
+            Stage primaryStage = (Stage) node.getScene().getWindow();
+            try {
+                this.PopupTermsScene = FXMLLoader.load(getClass().getResource("/FXML/PopupTermsR.fxml"));
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene scene = new Scene(PopupTermsScene);
+            modalBack(primaryStage, scene);
         }
     }
 
@@ -510,7 +539,7 @@ public class Controller{
         Node node = (Node) actionEvent.getSource();
         Stage primaryStage = (Stage) node.getScene().getWindow();
         try {
-            this.nySkadeScene = FXMLLoader.load(getClass().getResource("/FXML/Skademelding.fxml"));
+            this.nySkadeScene = FXMLLoader.load(getClass().getResource("/FXML/NySkade.fxml"));
         }
         catch (IOException e) {
             e.printStackTrace();

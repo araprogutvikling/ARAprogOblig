@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
@@ -13,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
+<AnchorPane prefHeight="600.0" prefWidth="1198.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
    <children>
       <AnchorPane fx:id="AnchorPaneCustomer" layoutX="14.0" layoutY="12.0" prefHeight="523.0" prefWidth="308.0">
          <children>
@@ -216,7 +212,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnHInsuranceConditions" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnHInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -326,7 +322,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnBInsuranceConditions" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnBInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -376,7 +372,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnTInsuranceConditions1" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnTInsuranceConditions1" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                         <Label layoutX="18.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsområde:">
                            <font>
                               <Font name="System Bold" size="14.0" />
@@ -516,7 +512,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnCInsuranceConditions" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnCInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
                </content>
             </Tab>

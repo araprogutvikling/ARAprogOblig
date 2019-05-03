@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
+   <children>
+      <Button fx:id="lukkPopup" cancelButton="true" layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnClosePopup" prefHeight="35.0" prefWidth="168.0" text="Lukk" />
+      <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="573.0" text="ARA Husforsikring gjelder for eneboliger, rekkehus og andre typer boliger. Forsikringen garanterer for alle kostnader tilknyttet skader på boligen din. Det dekkes også for gjenoppbygging ved skader på mer enn 75% av bygningen, såkalt totalskade. Brannskader, vannskader, tyveri, naturskader, bekjempelse av skadedyr og skader påført av leietakere i din bolig er også omfattet av denne forsikringen. For nærmere beløpsgrenser se den enkelte kundes kontrakt." wrapText="true" />
+   </children>
+</AnchorPane>
