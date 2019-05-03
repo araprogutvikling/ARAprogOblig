@@ -326,7 +326,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnBInsuranceConditions" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnBInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
                </content>
             </Tab>
@@ -376,7 +376,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnTInsuranceConditions1" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnTInsuranceConditions1" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                         <Label layoutX="18.0" layoutY="219.0" prefHeight="46.0" prefWidth="201.0" text="Forsikringsområde:">
                            <font>
                               <Font name="System Bold" size="14.0" />
@@ -516,7 +516,7 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnCInsuranceConditions" disable="true" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
+                        <Button fx:id="btnCInsuranceConditions" layoutX="18.0" layoutY="173.0" mnemonicParsing="false" onAction="#showTerms" prefHeight="27.0" prefWidth="161.0" text="Forsikringsbetingelser" />
                      </children></AnchorPane>
                </content>
             </Tab>
