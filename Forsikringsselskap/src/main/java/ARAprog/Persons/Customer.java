@@ -20,7 +20,7 @@ public class Customer extends Person {
             return Customernr;
     }
 
-    //Setter for Customer
+    //Setter for Customer, starter metoden generateCNr for å genere et unikt kundenr.
     public void setCustomernr() {
         this.Customernr = generateCNr();
     }
@@ -34,6 +34,7 @@ public class Customer extends Person {
         return false;
     }
     //Genererer et tilfelig tall, sender det gjennom checkeren over og dersom det er unikt, retunerer det i arrayet.
+    // Deretter blir det sendt inn i setCustomernr
     public int generateCNr() {
         randomTall = minGrense + (int) (Math.random() * ((maxGrense -
                 minGrense) + 1));
