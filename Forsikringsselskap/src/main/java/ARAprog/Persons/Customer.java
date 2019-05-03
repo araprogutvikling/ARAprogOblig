@@ -4,8 +4,8 @@ public class Customer extends Person {
     //Datafelt for Customer
     private int Customernr;
     private int randomTall;
-    final int maxGrense = 999999; /*konstant (final)*/
-    final int minGrense = 100000; /*konstant (final)*/
+    final int maxGrense = 999_999; /*konstant (final)*/
+    final int minGrense = 100_000; /*konstant (final)*/
     int[] array;
 
     //Konstruktør for Customer
