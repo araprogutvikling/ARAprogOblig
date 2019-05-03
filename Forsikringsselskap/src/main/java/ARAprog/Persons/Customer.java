@@ -24,7 +24,7 @@ public class Customer extends Person {
     public void setCustomernr() {
         this.Customernr = generateCNr();
     }
-
+    //Sjekker om et Customernr er unikt, eller allerede eksistierer!
     private boolean AlreadyACNr(int newCNr) {
         for (int i = 0; i < array.length; i++) {
             if (newCNr == array[i]) {
@@ -33,7 +33,7 @@ public class Customer extends Person {
         }
         return false;
     }
-
+    //Genererer et tilfelig tall, sender det gjennom checkeren over og dersom det er unikt, retunerer det i arrayet.
     public int generateCNr() {
         randomTall = minGrense + (int) (Math.random() * ((maxGrense -
                 minGrense) + 1));
