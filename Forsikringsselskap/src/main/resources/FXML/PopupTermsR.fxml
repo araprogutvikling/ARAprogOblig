@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.Controller">
+   <children>
+      <Button fx:id="lukkPopup" cancelButton="true" layoutX="216.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnClosePopup" prefHeight="35.0" prefWidth="168.0" text="Lukk" />
+      <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="573.0" text="ARA reiseforsikring gjelder for alle land innenfor Europa, Asia, Oseania, Nord- og Sør-Amerika, og Afrika. Ved tyveri og skade på reisegods er maks utbetaling ubegrenset. Ved innleggelse på sykehus, legebesøk, hjemtransport ved sykdom o.l. er maks utbetaling ubegrenset. Ved avbrutt ferie (fremskyndet hjemreise) utbetales 1500 kr per dag (inntil 100 000 kr).         Ved avbestilling av ferie grunnet sykdom eller skade på egen bolig er maks utbetaling ubegrenset. For nærmere informasjon se den enkelte kundes kontrakt." wrapText="true" />
+   </children>
+</AnchorPane>

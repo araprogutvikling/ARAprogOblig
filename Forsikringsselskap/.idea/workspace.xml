@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="" />
+    <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Forsikringsselskap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Forsikringsselskap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,36 +19,62 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="548">
+              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="345">
+              <caret line="369" column="5" selection-start-line="369" selection-start-column="5" selection-end-line="369" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2032#3817#0" />
+                <element signature="e#4523#4670#0" expanded="true" />
+                <element signature="e#4669#4670#0" expanded="true" />
+                <element signature="e#6155#6539#0" />
+                <element signature="e#6632#8799#0" />
+                <element signature="e#8805#8996#0" />
+                <element signature="e#12848#13231#0" />
+                <element signature="e#13323#13473#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerReise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="383">
+              <caret line="126" column="5" selection-start-line="119" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +87,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>btnNykunde</find>
+      <find>fina</find>
+      <find>int</find>
+      <find>fx:id</find>
+      <find>refre</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,8 +113,37 @@
         <option value="$PROJECT_DIR$/src/main/resources/GUI.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/module-info.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Backend/NewPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Backend/NewCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/Loading.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/GetSelectedCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controllers/Controllers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controllers/Inputcheckers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/GenerateNew/NewCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controllers/NyKundeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ARAprog/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerFritidsbolig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/PopupTerms.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/PopupTermsData.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsH.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsR.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsF.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsB.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/FXML/NySkade.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/ControllerSkade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java" />
       </list>
     </option>
   </component>
@@ -76,23 +154,41 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Forsikringsselskap" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-10" />
+    <option name="width" value="765" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
               <item name="Forsikringsselskap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forsikringsselskap" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
@@ -127,24 +223,101 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forsikringsselskap" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forsikringsselskap" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="FXML" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Forsikringsselskap" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Forsikringsselskap" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ARAprog" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554732911040" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/FXML" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.32528734" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ARAprog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Skole\Progging\Eksamen\HubSheeet\ARAprogOblig\Forsikringsselskap\src\main\resources\Assets\javafx\scene\image" />
+      <recent name="D:\Skole\Progging\Eksamen\HubSheeet\ARAprogOblig\Forsikringsselskap\src\main\java\ARAprog" />
       <recent name="C:\Users\S1rShadez\Google Drive\JavaProg\Forsikringsselskap\src\main\resources\FXML" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ARAprog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Skole\Progging\Eksamen\HubSheeet\ARAprogOblig\Forsikringsselskap\src\main\resources\FXML" />
+      <recent name="D:\Skole\Progging\Eksamen\HubSheeet\ARAprogOblig\Forsikringsselskap\src\main\resources\ASSets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -190,99 +363,668 @@
       <option name="presentableId" value="Default" />
       <updated>1554210731820</updated>
       <workItem from="1554210735192" duration="982000" />
+      <workItem from="1554717754905" duration="2182000" />
+      <workItem from="1554723191115" duration="4040000" />
+      <workItem from="1554808326600" duration="13500000" />
+      <workItem from="1556273387935" duration="704000" />
+      <workItem from="1556281670202" duration="6036000" />
+      <workItem from="1556309060553" duration="2208000" />
+      <workItem from="1556311320062" duration="1875000" />
+      <workItem from="1556313221859" duration="1338000" />
+      <workItem from="1556315088871" duration="542000" />
+      <workItem from="1556534774336" duration="16551000" />
+      <workItem from="1556558408503" duration="3112000" />
+      <workItem from="1556707934995" duration="7584000" />
+      <workItem from="1556784899145" duration="11761000" />
+      <workItem from="1556796732265" duration="1289000" />
+      <workItem from="1556802601868" duration="2128000" />
+      <workItem from="1556823879127" duration="401000" />
+      <workItem from="1556824297619" duration="187000" />
+      <workItem from="1556874121654" duration="4956000" />
     </task>
+    <task id="LOCAL-00001" summary="Lagde knapp">
+      <created>1554723272240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554723272240</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Opprettet GUI for program">
+      <created>1554732945227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554732945227</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lagt til knapper">
+      <created>1554812797000</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554812797000</updated>
+    </task>
+    <task id="LOCAL-00004" summary="All buttons have IDs, started on labels">
+      <created>1554901965148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554901965148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fikset Ny Kunde og loadinggif!">
+      <created>1556315587979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556315587979</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merga mer av arbeidet">
+      <created>1556374251549</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556374251549</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Did some stuff with the list etc">
+      <created>1556468681069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556468681069</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Did some stuff with the list etc">
+      <created>1556468756079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556468756079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added some TODO's">
+      <created>1556468925576</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556468925576</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Did some stuff, mostly in Controller.java">
+      <created>1556558477090</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556558477090</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Did a merge of GiveMeCoffee">
+      <created>1556558684617</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556558684617</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556801730473</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556801730473</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556803644642</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556803644642</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556804436456</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556804436456</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556805815447</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556805815447</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556810946511</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556810946511</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556812258249</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556812258249</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556813906455</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556813906455</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556814096407</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556814096407</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556819461791</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556819461791</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556823242612</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1556823242612</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556879022999</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556879022999</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="982000" />
+    <option name="totallyTimeSpent" value="125987000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14658849" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3261105" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.2936078" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32152975" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32719395" />
+      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2147651" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.4716714" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.32152975" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32719547" />
+      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32971016" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lagde knapp" />
+    <MESSAGE value="Opprettet GUI for program" />
+    <MESSAGE value="Lagt til knapper" />
+    <MESSAGE value="All buttons have IDs, started on labels" />
+    <MESSAGE value="Fikset Ny Kunde og loadinggif!" />
+    <MESSAGE value="Merga mer av arbeidet" />
+    <MESSAGE value="Did some stuff with the list etc" />
+    <MESSAGE value="Added some TODO's" />
+    <MESSAGE value="Did some stuff, mostly in Controller.java" />
+    <MESSAGE value="Did a merge of GiveMeCoffee" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java</url>
+          <line>23</line>
+          <log-expression expression="data" language="JAVA" />
+          <properties field="data" class="ARAprog.Controller" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/InvalidePolicieExcption/InvalidePolicieException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Exceptions/PersonExceptions/InvalidPersonException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state relative-caret-position="51">
+          <caret line="5" column="5" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Forsikringsselskap.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Backend/NewCustomer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Assets/load.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ReadFile/AbstractRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/SetSelectedCustomer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/icon.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Loading.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controllers/Inputcheckers.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Persons/Witness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Boat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Båt.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/GenerateNew/NewCustomer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerFritidsbolig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerBåt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/module-info.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Persons/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Persons/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Polices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/PopupTermsH.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="177" selection-start-line="9" selection-start-column="177" selection-end-line="9" selection-end-column="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/PopupTermsB.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="421" selection-start-line="9" selection-start-column="421" selection-end-line="9" selection-end-column="421" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/PopupTermsData.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/PopupTermsF.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/PopupTermsR.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="627" selection-start-line="9" selection-start-column="627" selection-end-line="9" selection-end-column="627" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerHus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/Husoginnbo.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="166" selection-start-line="7" selection-start-column="143" selection-end-line="7" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/NyKunde.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="92" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Policies/Claims.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setDescriptionOfIncident#0;class#Claims#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/FXML/NySkade.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerSkade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-957">
+          <caret line="76" column="44" lean-forward="true" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerReise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="126" column="5" selection-start-line="119" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1-sources.jar!/com/sun/glass/ui/win/WinApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1-sources.jar!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1785" selection-start-line="1785" selection-end-line="1785" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="369" column="5" selection-start-line="369" selection-start-column="5" selection-end-line="369" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2032#3817#0" />
+            <element signature="e#4523#4670#0" expanded="true" />
+            <element signature="e#4669#4670#0" expanded="true" />
+            <element signature="e#6155#6539#0" />
+            <element signature="e#6632#8799#0" />
+            <element signature="e#8805#8996#0" />
+            <element signature="e#12848#13231#0" />
+            <element signature="e#13323#13473#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/NyKundeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32528734" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Forsikringsselskap</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32528734" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.openjfx:javafx-base:11.0.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32528734" />
               </list>
             </option>
           </splitter-proportions>

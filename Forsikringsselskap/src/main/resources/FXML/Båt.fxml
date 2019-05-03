@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ARAprog.ControllerBåt">
+   <children>
+      <Button fx:id="buttonOpprettNyBåt" layoutX="379.0" layoutY="345.0" mnemonicParsing="false" onAction="#opprettNyBåt" text="Opprett ny forsikring" />
+      <TextField fx:id="BInputPremium" layoutX="58.0" layoutY="47.0" onKeyReleased="#verifyBpremium" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringspremie" />
+      <TextField fx:id="bInputOwner" layoutX="58.0" layoutY="92.0" onKeyReleased="#verifyBOwner" prefHeight="31.0" prefWidth="231.0" promptText="Eier sitt Pnr" />
+      <TextField fx:id="BInputAmount" layoutX="318.0" layoutY="47.0" onKeyReleased="#verifyBAmount" prefHeight="31.0" prefWidth="231.0" promptText="Forsikringsbeløp" />
+      <TextField fx:id="inputbRegNr" layoutX="318.0" layoutY="92.0" onKeyReleased="#verifyBRegNr" prefHeight="31.0" prefWidth="231.0" promptText="Registreringsnummer" />
+      <TextField fx:id="inputBLength" layoutX="318.0" layoutY="138.0" onKeyReleased="#verifyBLength" prefHeight="31.0" prefWidth="231.0" promptText="Lengde i fot" />
+      <TextField fx:id="inputBModel" layoutX="58.0" layoutY="185.0" onKeyReleased="#verifyBModel" prefHeight="31.0" prefWidth="231.0" promptText="Årsmodell" />
+      <TextField fx:id="inputBStrength" layoutX="318.0" layoutY="185.0" onKeyReleased="#verifyBStrength" prefHeight="31.0" prefWidth="231.0" promptText="Motortype- og styrke" />
+      <TextField fx:id="inputBType" layoutX="58.0" layoutY="138.0" onKeyReleased="#verifyBType" prefHeight="31.0" prefWidth="231.0" promptText="Båttype og modell" />
+      <Button fx:id="buttonLukkOpprettNyBåt" layoutX="133.0" layoutY="345.0" mnemonicParsing="false" onAction="#lukkOpprettNyBåt" text="Lukk " />
+      <CheckBox fx:id="bPremiumCb" disable="true" layoutX="291.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bOwnerCb" disable="true" layoutX="552.0" layoutY="52.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bAmountCb" disable="true" layoutX="291.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bRegNrCb" disable="true" layoutX="552.0" layoutY="97.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bTypeCb" disable="true" layoutX="291.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bLengthCb" disable="true" layoutX="552.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bModelCb" disable="true" layoutX="291.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+      <CheckBox fx:id="bStrengthCb" disable="true" layoutX="552.0" layoutY="190.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="17.0" />
+   </children>
+</AnchorPane>
