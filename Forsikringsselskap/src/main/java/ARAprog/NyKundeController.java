@@ -3,13 +3,19 @@ package ARAprog;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,20 +27,41 @@ public class NyKundeController {
     public TextField inputPnr, inputFirstName, inputLastName, inputAdress, inputZipCode, InputArea,
             inputPhone, inputEmail;
     public CheckBox pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck, checkArea;
-    public Parent loadingScene;
+    public Button buttonLagNyKunde;
+
 
 
     public void lagNyKundeOnClick(ActionEvent actionEvent){
-        try{
-            Node node = (Node) actionEvent.getSource();
-            Stage loadingStage = (Stage) node.getScene().getWindow();
-            this.loadingScene = FXMLLoader.load(getClass().getResource("/FXML/Loading.fxml"));
-            Scene scene = new Scene(loadingScene);
-            loadingStage.setScene(scene);
-            loadingStage.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+        Random rnd = new Random();
+        int number = rnd.nextInt(999999);
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
+
+        String kundeNr = String.format("%06d", number);
+        String pNr = inputPnr.getText();
+        String firstName = inputFirstName.getText();
+        String lastName = inputLastName.getText();
+        String adress = inputAdress.getText();
+        String zipCode = inputZipCode.getText();
+        String area = InputArea.getText();
+        String currentDate = dateFormat.format(date);
+        String emptyData = "";
+
+        for (int i = 12; i < 57; i++){
+            emptyData += ";----------";
         }
+
+        String newData = kundeNr + ";" + firstName + ";" + lastName + ";" + pNr + ";" + adress + ";" + zipCode + ";" + area + ";" + currentDate + ";Nei;Nei;Nei;Nei" + emptyData;
+
+        Node node = (Node) actionEvent.getSource();
+        Stage modal = (Stage) node.getScene().getWindow();
+        modal.close();
+
+        //Får dessverre ikke dette til å funke i tide...
+        //Controller controller = new Controller();
+        //controller.createNewData(newData, "Customer");
+
+
     }
 
     public void btnNyKundeLukk(ActionEvent actionEvent){
@@ -47,48 +74,56 @@ public class NyKundeController {
         String tempArea = InputArea.getText();
         boolean correctArea = isAlpha(tempArea);
         setChecked(correctArea, InputArea, checkArea);
+        checkBoxSelected();
     }
 
     public void verifyFirsName(KeyEvent keyEvent){
         String tempFirstname = inputFirstName.getText();
         boolean correctFirstName = isAlpha(tempFirstname);
         setChecked(correctFirstName, inputFirstName, firstNameCheck);
+        checkBoxSelected();
     }
 
     public void verifyLastName(KeyEvent keyEvent){
         String tempLastName = inputLastName.getText();
         boolean correctLastName = isAlpha(tempLastName);
         setChecked(correctLastName, inputLastName, checkLastName);
+        checkBoxSelected();
     }
 
     public void verifyAdress (KeyEvent keyEvent){
         String tempAdress = inputAdress.getText();
         boolean correctAdress = checkAdress(tempAdress);
         setChecked(correctAdress, inputAdress, checkAdress);
+        checkBoxSelected();
     }
 
     public void verifyZipcode(){
         String tempZipCode = inputZipCode.getText();
         boolean correctZip = checkZip(tempZipCode);
         setChecked(correctZip, inputZipCode, checkZip);
+        checkBoxSelected();
     }
 
     public void verifyPnr(KeyEvent keyEvent) {
         String tempin = inputPnr.getText();
         boolean corectPnr = checkPnr(tempin);
         setChecked(corectPnr, inputPnr, pNrCheck);
+        checkBoxSelected();
     }
 
     public void verifyTlfNr(KeyEvent keyEvent){
         String tempTlf = inputPhone.getText();
         boolean correctTlf = checkTlf(tempTlf);
         setChecked(correctTlf, inputPhone, tlfCheck);
+        checkBoxSelected();
     }
 
     public void verifyEmail(KeyEvent keyEvent){
         String tempEmail = inputEmail.getText();
         boolean correctEmail = checkEmail(tempEmail);
         setChecked(correctEmail, inputEmail, emailCheck);
+        checkBoxSelected();
     }
 
     public void setChecked(boolean check, TextField t, CheckBox b){
@@ -200,6 +235,15 @@ public class NyKundeController {
             return true;
         }
         return false;
+    }
+
+    public void checkBoxSelected(){
+        if (activateRegisterBTN(pNrCheck, firstNameCheck, checkLastName, checkAdress, checkZip, tlfCheck, emailCheck, checkArea)){
+            buttonLagNyKunde.setDisable(false);
+        }
+        else {
+            buttonLagNyKunde.setDisable(true);
+        }
     }
 
 }

@@ -27,9 +27,9 @@ public class Controller{
     public Button btnNyku, btnDelCustomer, btnReadFile, btnDelHis, btnHInsuranceConditions,
             btnDelH, btnDelBoat, btnDelT, btnDelC, btnNewH, btnNewBoat, btnNewT, btnNewC, btnNyHus,
             btnBInsuranceConditions, btnTInsuranceConditions1, btnCInsuranceConditions, btnNySkademelding, lukkPopup;
-
+    @FXML
     public ListView ListForClaimsHistory, ScrollList;
-
+    @FXML
     public Label lblOCustomer, lblOAddress, lblOCustomerStart, lblOYN1, lblOYN2, lblOYN3, lblOYN4, lblHInsuranceNr1,
             lblHInsurancePrm1, lblHAddress1, lblHType1, lblHBuildingMaterial1, lblHStandard1, lblHSquaremeter1,
             lblHInsuranceVB1, lblHDateForInsurance1, lblHAmountInsurance1, lblBInsuranceNr1, lblBInsurancePrm1,
@@ -42,6 +42,15 @@ public class Controller{
     public Parent nyKundeScene, NyHusScene, nyBåtScene, nyReiseScene, nyFritidsboligScene, nySkadeScene, PopupTermsScene;
 
     @FXML public void initialize(){}
+
+    public void refreshScrollList(){
+        ScrollList.getItems().add("");
+        ScrollList.getItems().clear();
+        for(String text : data){
+            String[] string = parseCustomerData(text);
+            ScrollList.getItems().add("Kundenr: " + string[0] + " " + string[1] + " " + string[2]);
+        }
+    }
 
     public void saveFile(){
         FileChooser fileSave = new FileChooser();
