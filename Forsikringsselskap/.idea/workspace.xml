@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="443e4d42-abd0-4728-9451-7bc128aa3cc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ARAprog/ControllerSkade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/NySkade.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsF.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsH.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsR.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ARAprog/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ARAprog/PopupTermsData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/PopupTerms.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/PopupTermsB.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ARAprog/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/GUI.fxml" afterDir="false" />
     </list>
@@ -72,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerSkade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+            <state relative-caret-position="-957">
+              <caret line="76" column="44" lean-forward="true" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -392,7 +383,7 @@
       <workItem from="1556802601868" duration="2128000" />
       <workItem from="1556823879127" duration="401000" />
       <workItem from="1556824297619" duration="187000" />
-      <workItem from="1556874121654" duration="4876000" />
+      <workItem from="1556874121654" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="Lagde knapp">
       <created>1554723272240</created>
@@ -541,11 +532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556823242612</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Merge remote-tracking branch 'origin/Buuuuuuurn' into burn2&#10;&#10;# Conflicts:&#10;#&#9;Forsikringsselskap/.idea/workspace.xml&#10;#&#9;Forsikringsselskap/src/main/java/ARAprog/Controller.java&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/GUI.fxml&#10;#&#9;Forsikringsselskap/src/main/resources/FXML/NyKunde.fxml&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Controller.class&#10;#&#9;Forsikringsselskap/target/classes/ARAprog/Persons/Customer.class&#10;#&#9;Forsikringsselskap/target/classes/FXML/GUI.fxml">
+      <created>1556879022999</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556879022999</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120011000" />
+    <option name="totallyTimeSpent" value="120091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -558,7 +556,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -569,7 +566,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.29461756" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -912,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ARAprog/ControllerSkade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="61" column="53" lean-forward="true" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+        <state relative-caret-position="-957">
+          <caret line="76" column="44" lean-forward="true" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
         </state>
       </provider>
     </entry>
